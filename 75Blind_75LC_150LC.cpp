@@ -4,7 +4,7 @@ using namespace std;
 
 /********************************************* REPEATED 3 TIMES ********************************************** */
 
-//1. TWO SUM                 (CUTTED)
+//01. TWO SUM                 (CUTTED)
 //BRUTE FORCE APPROACH                                                          {T.C = O(N^2), S.C = O(1)}
 //using 2 for loop iterate vector and return index
 class Solution {
@@ -49,7 +49,7 @@ Explanation: Because nums[0] + nums[1] == 9, we return [0, 1].
 */
 
 
-//2. BEST TIME TO BUY STOCK  (ALL)
+//02. BEST TIME TO BUY STOCK  (ALL)
 //2.1. BUY ON ONE DAY SELL ON ANOTHER DAY                                       {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
@@ -79,7 +79,7 @@ Explanation: In this case, no transactions are done and the max profit = 0.
 */
 
 
-//2.2 BUY/SELL ON SAME DAY WITH HOLIDING ATMOST 1 STOCK AT A TIME             {T.C = O(N), S.C = O(N)}
+//02.2 BUY/SELL ON SAME DAY WITH HOLIDING ATMOST 1 STOCK AT A TIME             {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     int solveMem(vector<int>&prices, int idx, int buy, vector<vector<int>>&dp){
@@ -117,7 +117,7 @@ public:
 };
 
 
-//2.3 BUY/SELL ON SAME DAY WITH HOLIDING ATMOST 2 STOCK AT A TIME             {T.C = O(N), S.C = O(N)}
+//02.3 BUY/SELL ON SAME DAY WITH HOLIDING ATMOST 2 STOCK AT A TIME             {T.C = O(N), S.C = O(N)}
 //RECURSION + MEMOIZATION
 class Solution {
 public:
@@ -172,7 +172,7 @@ Total profit is 4.
 */
 
 
-//2.4. BUY/SELL ON SAME DAY WITH HOLIDING ATMOST K(TRANSACTION) STOCK AT A TIME             {T.C = O(N*K), S.C = O(N*K)}
+//02.4. BUY/SELL ON SAME DAY WITH HOLIDING ATMOST K(TRANSACTION) STOCK AT A TIME             {T.C = O(N*K), S.C = O(N*K)}
 //RECURSION + MEMOIZATION
 class Solution {
 public:
@@ -511,7 +511,7 @@ Output: 2
 
 
 /********************************************** REPEATED 2 TIMES *********************************************** */
-//03. CONTAINS DUPLICATES                                         {T.C = O(N), S.C = O(N)}
+//10. CONTAINS DUPLICATES                                         {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     bool containsDuplicate(vector<int>& nums) {
@@ -538,10 +538,7 @@ All elements are distinct.
 */
 
 
-
-
-
-//05. MAXIMUM SUM SUBARRAY (KADANE'S ALGO)      (CUTTED)
+//11. MAXIMUM SUM SUBARRAY (KADANE'S ALGO)      (CUTTED)
 class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
@@ -576,7 +573,7 @@ Explanation: The subarray [5,4,-1,7,8] has the largest sum 23.
 */
 
 
-//06. MAXIMUM PRODUCT SUBARRAY (KADANE'S ALGO)                                          {T.C = O(N), S.C = O(1)}
+//12. MAXIMUM PRODUCT SUBARRAY (KADANE'S ALGO)                                          {T.C = O(N), S.C = O(1)}
 //USING KADANE'S ALGO(LEFT TO RIGTH, RIGTH TO LEFT BOTH)
 class Solution {
 public:
@@ -612,7 +609,7 @@ Explanation: The result cannot be 2, because [-2,-1] is not a subarray.
 */
 
 
-//07. FIND MINIMUM IN ROTATED SORTED ARRAY        (CUTTED)
+//13. FIND MINIMUM IN ROTATED SORTED ARRAY        (CUTTED)
 class Solution {
 public:
     int findMin(vector<int>& nums) {
@@ -656,7 +653,7 @@ Explanation: The original array was [11,13,15,17] and it was rotated 4 times.
 */
 
 
-//08. SEARCH IN ROTATED SORTED ARRAY                              {T.C = O(LOGN), S.C = O(1)}
+//14. SEARCH IN ROTATED SORTED ARRAY                              {T.C = O(LOGN), S.C = O(1)}
 //BINARY SEARCH ON INDEX
 class Solution {
 public:
@@ -692,7 +689,7 @@ Output: -1
 */
 
 
-//09. 3 SUM                                                         {T.C = O(N^2), S.C = O(N)}
+//15. 3 SUM                                                         {T.C = O(N^2), S.C = O(N)}
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
@@ -742,10 +739,7 @@ Explanation: The only possible triplet sums up to 0.
 */
 
 
-
-
-
-//11. SUM OF 2 INTEGERS                                            {T.C = O(1), S.C = O(1)}
+//16. SUM OF 2 INTEGERS                                            {T.C = O(1), S.C = O(1)}
 class Solution {
 public:
     int getSum(int a, int b) {
@@ -769,7 +763,7 @@ Output: 5
 */
 
 
-//12. NUMBER OF 1 BITS / HAMMING WEIGHT                       
+//17. NUMBER OF 1 BITS / HAMMING WEIGHT                       
 //USING STL                                                        {T.C = O(LOGN), S.C = O(1)}
 class Solution {
 public:
@@ -777,7 +771,6 @@ public:
         return __builtin_popcount(n);
     }
 };
-
 //WITHOUT STL                                                     {T.C = O(LOGN), S.C = O(1)}
 class Solution {
 public:
@@ -811,7 +804,7 @@ The input binary string 1111111111111111111111111111101 has a total of thirty se
 */
 
 
-//13. COUNTING BITS
+//18. COUNTING BITS
 //BRUTE FORCE                                                      {T.C = O(N*LOGN), S.C = O(N)}
 class Solution {
 public:
@@ -831,7 +824,6 @@ public:
         return ans;
     }
 };
-
 //OPTIMAL APPROACH                                                  {T.C = O(N), S.C = O(N)}
 //COUNT OF BITS OF NUM IS SAME AS ITS HALF(IF ODD THEN +1)
 class Solution {
@@ -868,7 +860,7 @@ Explanation:
 */
 
 
-//14. MISSING NUMBER 
+//19. MISSING NUMBER 
 //USING MATHS FORMULA                                             {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
@@ -903,7 +895,7 @@ range since it does not appear in nums.
 */
 
 
-//15. REVERSE BITS                                                  {T.C = O(1), S.C = O(1)}
+//20. REVERSE BITS                                                  {T.C = O(1), S.C = O(1)}
 class Solution {
 public:
     bool findKthBitSet(int k, uint32_t n){
@@ -935,7 +927,7 @@ Explanation: The input binary string 11111111111111111111111111111101 represents
 */
 
 
-//16. CLIMBING STAIRS                                              {T.C = O(N), S.C = O(N)}
+//21. CLIMBING STAIRS                                              {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     int dp[50];
@@ -973,7 +965,7 @@ Explanation: There are three ways to climb to the top.
 */
 
 
-//17. COIN CHANGE                                                      {T.C = O(N*TARGET), S.C = O(N*TARGET)}            
+//22. COIN CHANGE                                                      {T.C = O(N*TARGET), S.C = O(N*TARGET)}            
 /*
 {T.C = O(EXP), S.C = O(1)}
 Brute force = using simple recursion handle base case , initialize ans with INT_MAX(finding minimum ans) iterate through coins , if 
@@ -1087,7 +1079,7 @@ Output: 0
 */
     
 
-//18. LONGEST INCREASING SUBSEQUENCE                               {T.C = O(N^2), S.C = O(N^2)}
+//23. LONGEST INCREASING SUBSEQUENCE                               {T.C = O(N^2), S.C = O(N^2)}
 class Solution {
 public:
     int dp[2501][2501];
@@ -1127,7 +1119,7 @@ Output: 1
 */
 
 
-//19. LONGEST COMMON SUBSEQUENCE                       
+//24. LONGEST COMMON SUBSEQUENCE                       
 //USING TABULATION                                                 {T.C = O(N^2), S.C = O(N^2)}
 class Solution {
 public:
@@ -1189,7 +1181,7 @@ Explanation: There is no such common subsequence, so the result is 0.
 */
 
 
-//20. WORD BREAK                                                  {T.C = O(N), S.C = O(N)}
+//25. WORD BREAK                                                  {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     int dp[305];
@@ -1233,7 +1225,7 @@ Output: false
 */
 
 
-//21. COMBINATION SUM                                             {T.C = O(EXP / N^TARGET), S.C = O(N)}
+//26. COMBINATION SUM                                             {T.C = O(EXP / N^TARGET), S.C = O(N)}
 class Solution {
 public:
     void solve(vector<int>&cand, int target, vector<vector<int>>&ans, vector<int>&temp, int i){
@@ -1277,10 +1269,7 @@ Output: []
 */
 
 
-
-
-
-//23. HOUSE ROBBER II                                              {T.C = O(N), S.C = O(N)}
+//27. HOUSE ROBBER II                                              {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     int dp1[105], dp2[105];
@@ -1327,7 +1316,7 @@ Output: 3
 */
 
 
-//24. DECODE WAYS                                                  {T.C = O(N), S.C = O(N)}
+//28. DECODE WAYS                                                  {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     int dp[105];
@@ -1373,7 +1362,7 @@ Explanation:
 */
 
 
-//25. UNIQUE PATHS                                                  {T.C = O(N^2), S.C = O(N^2)}
+//29. UNIQUE PATHS                                                  {T.C = O(N^2), S.C = O(N^2)}
 class Solution {
 public:
     int dp[105][105];
@@ -1409,7 +1398,7 @@ Explanation: From the top-left corner, there are a total of 3 ways to reach the 
 */
 
 
-//26. JUMP GAME                                                   {T.C = O(N^2), S.C = O(N)}
+//30. JUMP GAME                                                   {T.C = O(N^2), S.C = O(N)}
 class Solution {
 public:
     int dp[10005];
@@ -1444,7 +1433,7 @@ Explanation: You will always arrive at index 3 no matter what. Its maximum jump 
 */
 
 
-//26b. JUMP GAME II                                              {T.C = O(N^2), S.C = O(N)}
+//31. JUMP GAME II                                              {T.C = O(N^2), S.C = O(N)}
 class Solution {
 public:
     int dp[10005];
@@ -1496,7 +1485,7 @@ public:
         neighbors = _neighbors;
     }
 };
-//27. CLONE GRAPH                                              {T.C = O(V+E), S.C = O(V)}         
+//32. CLONE GRAPH                                              {T.C = O(V+E), S.C = O(V)}         
 class Solution {
 public:
     void dfs(Node* root, vector<Node*>&vis, Node*node){
@@ -1543,7 +1532,7 @@ Explanation: This an empty graph, it does not have any nodes.
 */
 
 
-//28. COURSE SCHEDULE                                             {T.C = O(V+E), S.C = O(V+E)}
+//33. COURSE SCHEDULE                                             {T.C = O(V+E), S.C = O(V+E)}
 class Solution {
 public:
     vector<int>topoSort(vector<vector<int>>&edges, int n){
@@ -1592,7 +1581,7 @@ To take course 1 you should have finished course 0, and to take course 0 you sho
 */
 
 
-//29. PACIFIC ATLANTIC WATER FLOW                                 {T.C = O(N*M), S.C = O(N*M)}
+//34. PACIFIC ATLANTIC WATER FLOW                                 {T.C = O(N*M), S.C = O(N*M)}
 class Solution {
 public:
     vector<vector<int>>directions = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
@@ -1671,7 +1660,7 @@ Explanation: The water can flow from the only cell to the Pacific and Atlantic o
 */
 
 
-//30. NUMBER OF ISLANDS (IN A MATRIX)                             {T.C = O(N*M), S.C = O(N*M)}
+//35. NUMBER OF ISLANDS (IN A MATRIX)                             {T.C = O(N*M), S.C = O(N*M)}
 class Solution {
 public:
     vector<vector<int>>directions = {{1, 0}, {-1, 0}, {0, 1}, {0, -1}};
@@ -1726,7 +1715,7 @@ Output: 3
 */
 
 
-//30b. CONNECTED COMPONENTS IN AN UNDIRECTED GRAPH              {T.C = O(V+E+CLOGC), S.C = O(V+E)}
+//36. CONNECTED COMPONENTS IN AN UNDIRECTED GRAPH              {T.C = O(V+E+CLOGC), S.C = O(V+E)}
 class Solution {
   public:
     void dfs(unordered_map<int,vector<int>>&adj, vector<bool>&vis, vector<int>&components, int node){
@@ -1772,7 +1761,7 @@ Output: [[0, 1, 6],[2, 3, 4],[5]]
 */
 
 
-//31. LONGEST CONSECUTIVE SEQUENCE                               
+//37. LONGEST CONSECUTIVE SEQUENCE                               
 //USING SET                                                       {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
@@ -1806,7 +1795,7 @@ Output: 9
 */
 
 
-//32. ALIEN DICTIONARY                                           {T.C = O(V+E), S.C = O(V+E)}
+//38. ALIEN DICTIONARY                                           {T.C = O(V+E), S.C = O(V+E)}
 class Solution{
     public:
     vector<int>topoSort(int V , unordered_map<int, vector<int>>&adj){
@@ -1883,7 +1872,7 @@ Similarly we can find other orders.
 */
 
 
-//33. GRAPH VALID TREE                                           {T.C = O(V+E), S.C = O(V+E)}
+//39. GRAPH VALID TREE                                           {T.C = O(V+E), S.C = O(V+E)}
 //FOR TREE = GRAPH SHOULD = 1 COMPONENTS & NO CYCLE
 bool dfsUnCycle(unordered_map<int,vector<int>>&adj, vector<bool>&vis, int node, int prev){
     vis[node] = true;
@@ -1937,7 +1926,7 @@ False
 */
 
 
-//34. NUMBER OF CONNECTED COMPONENTS IN A GRAPH                  {T.C = O(V+E), S.C = O(V+E)}
+//40. NUMBER OF CONNECTED COMPONENTS IN A GRAPH                  {T.C = O(V+E), S.C = O(V+E)}
 class Solution {
   public:
     void dfs(unordered_map<int,vector<int>>&adj, vector<bool>&vis,  int node){
@@ -1976,7 +1965,7 @@ Output: 3
 */
 
 
-//35. INSERT INTERVAL                                             {T.C = O(N), S.C = O(N)}
+//41. INSERT INTERVAL                                             {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval) {
@@ -2014,7 +2003,7 @@ Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
 */
 
 
-//36. MERGE INTERVALS                                           {T.C = O(N*LOGN), S.C = O(N)}
+//42. MERGE INTERVALS                                           {T.C = O(N*LOGN), S.C = O(N)}
 class Solution {
 public:
     vector<vector<int>> merge(vector<vector<int>>& intervals) {
@@ -2048,7 +2037,7 @@ Explanation: Intervals [1,4] and [4,5] are considered overlapping.
 */
 
 
-//37. NON OVERALAPPING INTERVALS                                  {T.C = O(N*LOGN), S.C = O(1)}
+//43. NON OVERALAPPING INTERVALS                                  {T.C = O(N*LOGN), S.C = O(1)}
 //for erase overalap interval (we have to think greedly so sort on basis of ending (high have good chances to overlap more intervals))
 class Solution {
 public:
@@ -2089,7 +2078,7 @@ Explanation: You don't need to remove any of the intervals since they're already
 */
 
 
-//38. REPEATING AND MISSING                                     {T.C = O(N), S.C = O(N)} 
+//44. REPEATING AND MISSING                                     {T.C = O(N), S.C = O(N)} 
 class Solution {
   public:
     vector<int> findTwoElement(vector<int>& arr) {
@@ -2130,7 +2119,7 @@ public:
     }
 }
 */
-//39. MEETING ROOMS I                                             {T.C = O(N*LOGN), S.C = O(1)}
+//45. MEETING ROOMS I                                             {T.C = O(N*LOGN), S.C = O(1)}
 class Solution {
 public:
     bool canAttendMeetings(vector<Interval>& intervals) {
@@ -2163,7 +2152,7 @@ Output: true
 */
 
 
-//40. MEETING ROOMS II                                           {T.C = O(N*LOGN), S.C = O(N)}
+//46. MEETING ROOMS II                                           {T.C = O(N*LOGN), S.C = O(N)}
 class Solution {
 public:
     int minMeetingRooms(vector<Interval>& intervals) {
@@ -2202,9 +2191,7 @@ Output: 1
 */
 
 
-
-
-//42. LINKED LIST CYCLE                                           {T.C = O(N), S.C = O(1)}
+//47. LINKED LIST CYCLE                                           {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -2239,7 +2226,7 @@ Explanation: There is no cycle in the linked list.
 */
 
 
-//43. MERGE 2 SORTED LIST                                         {T.C = O(N), S.C = O(1)}
+//48. MERGE 2 SORTED LIST                                         {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
@@ -2324,7 +2311,7 @@ Output: [0]
 */
 
 
-//44. MERGE K SORTED ARRAYS                                       {T.C = O(N*LOGN), S.C = O(N)},N = K^2
+//49. MERGE K SORTED ARRAYS                                       {T.C = O(N*LOGN), S.C = O(N)},N = K^2
 class Solution{
 public:
     typedef pair<int,pair<int,int>>P;
@@ -2362,7 +2349,7 @@ Explanation: Above test case has 4 sorted arrays of size 4, 4, 4, 4 arr[][] = [[
 */
 
 
-//45. REMOVE NTH NODE FROM THE END OF LINKED LIST               {T.C = O(N), S.C = O(1)}
+//50. REMOVE NTH NODE FROM THE END OF LINKED LIST               {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
     ListNode* removeNthFromEnd(ListNode* head, int n) {
@@ -2400,7 +2387,7 @@ Output: [1]
 */
 
 
-//45. REMOVE NTH NODE FROM THE START OF LINKED LIST               {T.C = O(N), S.C = O(1)}
+//51. REMOVE NTH NODE FROM THE START OF LINKED LIST               {T.C = O(N), S.C = O(1)}
 class Solution {
   public:
     Node* deleteNode(Node* head, int x) {
@@ -2428,7 +2415,7 @@ Explanation: After deleting the node at 2nd position (1-based indexing), the lin
 */
 
 
-//46. REORDER LIST                                               {T.C = O(N), S.C = O(1)}
+//52. REORDER LIST                                               {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
     ListNode* reverse(ListNode* node){
@@ -2482,7 +2469,7 @@ Output: [1,5,2,4,3]
 */
 
 
-//47. SET MATRIX ZEROES                                          {T.C = O(N*M), S.C = O(N+M)}
+//53. SET MATRIX ZEROES                                          {T.C = O(N*M), S.C = O(N+M)}
 //APRROACH 1(BRUTE FORCE)                                                        {T.C = O(N^3), S.C = O(N^2)}
 //use 2d matrix store ans in this then copy element in original matrix 
 class Solution {
@@ -2564,7 +2551,7 @@ Output: [
 */
 
 
-//48. SPIRAL MATRIX                                               {T.C = O(N*M), S.C = O(N*M)}
+//54. SPIRAL MATRIX                                               {T.C = O(N*M), S.C = O(N*M)}
 class Solution {
 public:
     vector<int> spiralOrder(vector<vector<int>>& matrix) {
@@ -2614,7 +2601,7 @@ Output: [1,2,3,4,8,12,11,10,9,5,6,7]
 */
 
 
-//49. ROTATE IMAGE                                               {T.C = O(N*M), S.C = O(1)}
+//55. ROTATE IMAGE                                               {T.C = O(N*M), S.C = O(1)}
 class Solution {
 public:
     void rotate(vector<vector<int>>& matrix) {
@@ -2648,7 +2635,7 @@ Output: [[15,13,2,5],[14,3,4,1],[12,6,8,9],[16,7,10,11]]
 
 
 
-//51. LONGEST SUBSTRING WITHOUT REPEATING CHARACTERS             {T.C = O(N), S.C = O(N)}
+//56. LONGEST SUBSTRING WITHOUT REPEATING CHARACTERS             {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     int lengthOfLongestSubstring(string s) {
@@ -2689,7 +2676,7 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
 */
 
 
-//52. LONGEST REPEATING CHARACTER REPLACEMENT                    {T.C = O(N), S.C = O(N)}    
+//57. LONGEST REPEATING CHARACTER REPLACEMENT                    {T.C = O(N), S.C = O(N)}    
 class Solution {
 public:
     int characterReplacement(string s, int k) {
@@ -2729,7 +2716,7 @@ There may exists other ways to achieve this answer too.
 */
 
 
-//53. MINIMUM WINDOW SUBSTRING                                   {T.C = O(N), S.C = O(N)}
+//58. MINIMUM WINDOW SUBSTRING                                   {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     string minWindow(string s, string t) {
@@ -2781,7 +2768,7 @@ Since the largest window of s only has one 'a', return empty string.
 */
 
 
-//54. VALID ANAGRAM 
+//59. VALID ANAGRAM 
 //BRUTE FORCE                                                    {T.C = O(N*LOGN), S.C = O(1)}
 class Solution {
 public:
@@ -2823,7 +2810,7 @@ Output: false
 */
 
 
-//55. GROUP ANAGRAMS
+//60. GROUP ANAGRAMS
 //USING SORTING + MAP                                           {T.C = O(N*(M*LOGM)), S.C = O(N)}
 class Solution {
 public:
@@ -2895,7 +2882,7 @@ Output: [["a"]]
 */
 
 
-//56. VALID PARENTHESES                                           {T.C = O(N), S.C = O(N)}
+//61. VALID PARENTHESES                                           {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     bool isValid(string s) {
@@ -2927,7 +2914,7 @@ Output: true
 */
 
 
-//57. CHECK PALINDROME
+//62. CHECK PALINDROME
 class Solution {
 public:
     bool isPalindrome(int x) {
@@ -2958,7 +2945,7 @@ Output: false
 Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 */
 
-//58. LONGEST PALINDROMIC SUBSTRING
+//63. LONGEST PALINDROMIC SUBSTRING
 //USING DP                                                        {T.C = O(N^2), S.C = O(N^2)}
 class Solution {
 public:
@@ -3060,7 +3047,7 @@ Output: "bb"
 */
 
 
-//59. PALINDROMIC SUBSTRING                                      
+//64. PALINDROMIC SUBSTRING                                      
 //BRUTE FORCE                                                     {T.C = O(N^3), S.C = O(1)}
 class Solution {
 public:
@@ -3118,7 +3105,7 @@ Explanation: Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".
 */
 
 
-//60. ENCODE AND DECODE STRINGS                                   {T.C = O(N), S.C = O(N)}
+//65. ENCODE AND DECODE STRINGS                                   {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     string encode(vector<string>& strs) {
@@ -3157,7 +3144,7 @@ Output: ["we","say",":","yes"]
 
 
 
-//62. SAME TREE                                                 {T.C = O(N), S.C = O(H)} 
+//66. SAME TREE                                                 {T.C = O(N), S.C = O(H)} 
 class Solution {
 public:
     bool isSameTree(TreeNode* p, TreeNode* q) {
@@ -3184,7 +3171,7 @@ Output: false
 */
 
 
-//63. INVERT BINARY TREE                                          {T.C = O(N), S.C = O(H)}
+//67. INVERT BINARY TREE                                          {T.C = O(N), S.C = O(H)}
 class Solution {
 public:
     TreeNode* invertTree(TreeNode* root) {
@@ -3214,7 +3201,7 @@ Output: []
 */
 
 
-//64. BINARY TREE MAXIMUM PATH SUM                               {T.C = O(N), S.C = O(H)}
+//68. BINARY TREE MAXIMUM PATH SUM                               {T.C = O(N), S.C = O(H)}
 class Solution {
 public:
     int solve(TreeNode* root, int &maxi){
@@ -3252,7 +3239,7 @@ Explanation: The optimal path is 15 -> 20 -> 7 with a path sum of 15 + 20 + 7 = 
 */
 
 
-//65. BINARY TREE LEVEL ORDER TRAVERSAL                         {T.C = O(N), S.C = O(N)} 
+//69. BINARY TREE LEVEL ORDER TRAVERSAL                         {T.C = O(N), S.C = O(N)} 
 class Solution {
 public:
     void lvlOrder(TreeNode* root, vector<vector<int>>&ans){
@@ -3295,7 +3282,7 @@ Output: []
 */
 
 
-//66. SERIALIZE AND DESERIALIZE BINARY TREE                      {T.C = O(N), S.C = O(N)}
+//70. SERIALIZE AND DESERIALIZE BINARY TREE                      {T.C = O(N), S.C = O(N)}
 class Codec {
 public:
     void btToStr(TreeNode* root, string &serAns){
@@ -3354,7 +3341,7 @@ Output: []
 */
 
 
-//67. SUBTREE OF ANOTHER TREE                                   {T.C = O(N*M), S.C = O(H)}
+//71. SUBTREE OF ANOTHER TREE                                   {T.C = O(N*M), S.C = O(H)}
 class Solution {
 public:
     bool isIdentical(TreeNode* p, TreeNode* q){
@@ -3385,7 +3372,7 @@ Output: false
 
 
 
-//68a. CONSTRUCT BINARY TREE FROM PREORDER AND INORDER TRAVERSAL     {T.C = O(N), S.C = O(H)}
+//72a. CONSTRUCT BINARY TREE FROM PREORDER AND INORDER TRAVERSAL     {T.C = O(N), S.C = O(H)}
 //PASS IDX BY REFERENCE , FIND ROOT IN PREORDER(START), SEARCH IN INORDER (LEFT, RIGTH SUBTREE), MAKE NEW ROOT
 class Solution {
 public:
@@ -3424,7 +3411,7 @@ Output: [-1]
 */
 
 
-//68b. CONSTRUCT BINARY TREE FROM POSTORDER AND INORDER TRAVERSAL     {T.C = O(N), S.C = O(H)}
+//72b. CONSTRUCT BINARY TREE FROM POSTORDER AND INORDER TRAVERSAL     {T.C = O(N), S.C = O(H)}
 //PASS IDX BY REFERENCE , FIND ROOT IN POSTORDER(START), SEARCH IN INORDER (LEFT, RIGTH SUBTREE), MAKE NEW ROOT
 class Solution {
 public:
@@ -3462,7 +3449,7 @@ Output: [-1]
 */
 
 
-//69. VALIDATE BINARY SEARCH TREE                                {T.C = O(N), S.C = O(H)}
+//73. VALIDATE BINARY SEARCH TREE                                {T.C = O(N), S.C = O(H)}
 class Solution {
 public:
     bool isValid(TreeNode* root, long long lowerBound, long long upperBound){
@@ -3489,7 +3476,7 @@ Explanation: The root node's value is 5 but its right child's value is 4.
 */
 
 
-//70. KTH SMALLEST ELEMENT IN A BST                              {T.C = O(N), S.C = O(N)}
+//74. KTH SMALLEST ELEMENT IN A BST                              {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     void treeToArr(TreeNode* root, vector<int>&vec){
@@ -3519,15 +3506,7 @@ Output: 3
 */
 
 
-
-
-//72.
-
-
-//73. 
-
-
-//74. TOP K FREQUENT ELEMENTS                                    {T.C = O(N), S.C = O(N)}
+//75. TOP K FREQUENT ELEMENTS                                    {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     //USING MAXHEAP                                      {T.C = O(N*LOGN), S.C = O(N)}
@@ -3557,7 +3536,7 @@ Output: [1]
 */
 
 
-//75. FIND MEDIAN FROM DATA STREAM                               {T.C = O(N), S.C = O(N)}
+//76. FIND MEDIAN FROM DATA STREAM                               {T.C = O(N), S.C = O(N)}
 class MedianFinder {
 public:
     priority_queue<int>leftMaxHeap;
@@ -3604,30 +3583,10 @@ medianFinder.findMedian(); // return 2.0
 /*----------------------------------------------THE END----------------------------------------------------------------*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //75 TOP INTERVIEW QUESTIONS LEETCODE
 
 /*----------------------------------------------ARRAY/STRING------------------------------------------------------------------*/
-//01. MERGE STRINGS ALTERNATELY                                                 {T.C = O(N), S.C = O(N)}
+//77. MERGE STRINGS ALTERNATELY                                                 {T.C = O(N), S.C = O(N)}
 /*
 simply take 2 pointers initialize to both strings if both smaller then total length ans += strings(1, 2) , if 1 is bigger(exhaust other) 
 simply return rest of string.
@@ -3687,7 +3646,7 @@ merged: a p b q c   d
 //for remove error(line)
 int gcd(int a, int b);
 //--------------------
-//02. GREATEST COMMON DIVISOR OF STRINGS                                           {T.C = O(N), S.C = O(N)}
+//78. GREATEST COMMON DIVISOR OF STRINGS                                           {T.C = O(N), S.C = O(N)}
 /*
 Using Commutative property of math (3+6 = 9 == 6+3 = 9) ,it implies that the strings have a common divisor ,then extracts a substring from
 str1 starting from index 0 with a length determined by the gcd of the lengths of str1 and str2.
@@ -3716,7 +3675,7 @@ Output: ""
 */
 
 
-//03. KIDS WITH THE GREATEST NUMBER OF CANDIES                                 {T.C = O(N), S.C = O(N)}
+//79. KIDS WITH THE GREATEST NUMBER OF CANDIES                                 {T.C = O(N), S.C = O(N)}
 /*
 First find maximum element of vector of candies then iterate again and check if candies[i] + extracandies >= maxi then push true else false
 to ans vector.
@@ -3758,7 +3717,7 @@ Kid 1 will always have the greatest number of candies, even if a different kid i
 */
 
 
-//04. CAN PLACE FLOWERS                                                       {T.C = O(N), S.C = O(1)}
+//80. CAN PLACE FLOWERS                                                       {T.C = O(N), S.C = O(1)}
 /*
 First check base case if n == 0 then always true, check left and right empty with boundary condition if its empty we can place flower else not.
 */
@@ -3799,7 +3758,7 @@ Output: false
 */
 
 
-//05. REVERSE VOWELS OF A STRING                                              {T.C = O(N), S.C = O(1){constant space(10 char)}}
+//81. REVERSE VOWELS OF A STRING                                              {T.C = O(N), S.C = O(1){constant space(10 char)}}
 /*
 First store all the vowels in a set then initialize two pointers (start, end) while(i < j) , inner i < j && vowels not find move i and j
 if find then swap initial and final characters(vowel).
@@ -3849,7 +3808,7 @@ Output: "leotcede"
 */
 
 
-//06. REVERSE WORDS IN A STRING
+//82. REVERSE WORDS IN A STRING
 class Solution {
 public:
     string reverseWords(string s) {
@@ -3895,10 +3854,7 @@ Explanation: You need to reduce multiple spaces between two words to a single sp
 */
 
 
-//07. PRODUCT OF ARRAY EXCEPT SELF            (CUTTED)
-
-
-//08. INCREASING TRIPLET SUBSEQUENCE                                 {T.C = O(N), S.C = O(1)}
+//83. INCREASING TRIPLET SUBSEQUENCE                                 {T.C = O(N), S.C = O(1)}
 /*
 First check the base case if n < 3 then return false(not possible triplet) initialize firstMin and secondMin and
 store the first min and second min element and 3rd element return true , else false.
@@ -3943,7 +3899,7 @@ Explanation: The triplet (3, 4, 5) is valid because nums[3] == 0 < nums[4] == 4 
 */
 
 
-//09. STRING COMPRESSION                                               {T.C = O(N), S.C = O(1)}
+//84. STRING COMPRESSION                                               {T.C = O(N), S.C = O(1)}
 /*
 First find the count if char is same to next char, then handle case count > 1 && count > 9 {10 = '1' '0'} put it into string.
 */
@@ -3997,7 +3953,7 @@ Explanation: The groups are "a" and "bbbbbbbbbbbb". This compresses to "ab12".
 
 
 /*---------------------------------------- TWO POINTERS --------------------------------------------------------*/
-//10. MOVE ZEROES                                                          {T.C = O(N), S.C = O(1)}
+//85. MOVE ZEROES                                                          {T.C = O(N), S.C = O(1)}
 /*
 Two pointer appraoch 1st pointer use to keep track of non zero element another when is simple iteration , if(nums[j] is not 0) then it will swap
 with nums[i] it ensures that nonzero element shift ot front.
@@ -4028,7 +3984,7 @@ Output: [0]
 */
 
 
-//11. IS SUBSEQUENCE                                                    {T.C = O(N), S.C = O(1)}
+//86. IS SUBSEQUENCE                                                    {T.C = O(N), S.C = O(1)}
 /*
 Initialize pointer to both string and iterate if same char then move first and second pointer else move second pointer at last check the
 first string is completed or not.
@@ -4060,10 +4016,7 @@ Output: false
 */
 
 
-//12. CONTAINER WITH MOST WATER                      (CUTTED)
-
-
-//13. MAX NUMBER OF K-SUM PAIRS                                            {T.C = O(N*LOGN), S.C = O(1)}
+//87. MAX NUMBER OF K-SUM PAIRS                                            {T.C = O(N*LOGN), S.C = O(1)}
 /*
 First sort the array then use two pointer approach if sum of nums[i]+nums[j] == k then increase count else if less then i++ else j--.
 */
@@ -4109,7 +4062,7 @@ There are no more pairs that sum up to 6, hence a total of 1 operation.
 
 
 /*-------------------------------------------SLIDING WINDOW ------------------------------------------*/
-//14. MAXIMUM AVERAGE SUBARRAY I                                            {T.C = O(N), S.C = O(1)}
+//88. MAXIMUM AVERAGE SUBARRAY I                                            {T.C = O(N), S.C = O(1)}
 /*
 First find the window then maxAvg = max(maxAvg, sum/k(avg)) and shrink move window by shrinking from left(sum -= nums[i])
 and increasing right side (j++).
@@ -4148,7 +4101,7 @@ Output: 5.00000
 */
 
 
-//15. MAXIMUM NUMBER OF VOWELS IN A SUBSTRING OF GIVEN LENGTH                      {T.C = O(N), S.C = O(1)}
+//89. MAXIMUM NUMBER OF VOWELS IN A SUBSTRING OF GIVEN LENGTH                      {T.C = O(N), S.C = O(1)}
 /*
 First store the all vowels in map(char, bool) , then first check if char matches to mp's char then count++, then expend the window,
 when the window length reach to k then shrink window from left and match the char to mp if same the count--. return maxi(window).
@@ -4207,7 +4160,7 @@ Explanation: "lee", "eet" and "ode" contain 2 vowels.
 */
 
 
-//16. MAX CONSECUTIVE ONES III                                                  {T.C = O(N), S.C = O(1)}
+//90. MAX CONSECUTIVE ONES III                                                  {T.C = O(N), S.C = O(1)}
 /*
 Using Variable Size Sliding window approach, take variable of zeroCount and store it if it is > K then shrink the window and at last 
 return max length.(we can swap only those 0s whose count is less then k only)
@@ -4252,7 +4205,7 @@ Bolded numbers were flipped from 0 to 1. The longest subarray is underlined.
 */
 
 
-//17. LONGEST SUBARRAY OF 1'S AFTER DELETING ONE ELEMENT                          {T.C = O(N), S.C = O(1)}
+//91. LONGEST SUBARRAY OF 1'S AFTER DELETING ONE ELEMENT                          {T.C = O(N), S.C = O(1)}
 /*
 Using Variable Size Sliding window, take zero count for first zero occur in subarray zeroCount++, then for next shrink window(j-i) 1 is deleted
 always, after that return maxi(length of subarray).
@@ -4300,7 +4253,7 @@ Explanation: You must delete one element.
 
 
 /*------------------------------------------------------------PREFIX SUM--------------------------------------------------------------*/
-//18. FIND THE HIGHEST ALTITUDE                                                  {T.C = O(N), S.C = O(N)}
+//92. FIND THE HIGHEST ALTITUDE                                                  {T.C = O(N), S.C = O(N)}
 /*
 Take a vector then store prefix sum of there by pushing element and prefix.back() after that return max of the prefix vector
 */
@@ -4328,7 +4281,7 @@ Explanation: The altitudes are [0,-4,-7,-9,-10,-6,-3,-1]. The highest is 0.
 */
 
 
-//19. FIND PIVOT INDEX                                                {T.C = O(N), S.C = O(1)}
+//93. FIND PIVOT INDEX                                                {T.C = O(N), S.C = O(1)}
 /*
 First find the total sum of the array, then iterate again decrease sum = sum-a[i] if it is equal to prefix sum then return the index else
 increase the prefix sum else return -1.
@@ -4380,7 +4333,7 @@ Right sum = nums[1] + nums[2] = 1 + -1 = 0
 
 
 /*------------------------------------------------------ HASH MAP / SET ----------------------------------------------------*/
-//20. FIND THE DIFFERENCE OF TWO ARRAYS                                   {T.C = O(N), S.C = O(N)}
+//94. FIND THE DIFFERENCE OF TWO ARRAYS                                   {T.C = O(N), S.C = O(N)}
 /*
 Take 2 vectors and 2 sets , push given vector's in set then iterate the set and push in vector the non match element same to next set
 finally return {ans1, ans2}.
@@ -4424,7 +4377,7 @@ Every integer in nums2 is present in nums1. Therefore, answer[1] = [].
 */
 
 
-//21. UNIQUE NUMBER OF OCCURENCES                                    {T.C = O(N), S.C = O(N)}
+//95. UNIQUE NUMBER OF OCCURENCES                                    {T.C = O(N), S.C = O(N)}
 /*
 Using Map (number, count) & set (unique count) , first store arr in map then , iterate map and check if count is unique
 after inserting count in set.
@@ -4463,7 +4416,7 @@ Output: true
 */
 
 
-//22. DETERMINE IF TWO STRINGS ARE CLOSE                                          {T.C = O(N*LOGN), S.C = O(N)}
+//96. DETERMINE IF TWO STRINGS ARE CLOSE                                          {T.C = O(N*LOGN), S.C = O(N)}
 /*
 Take 2 vectors and 2 map ,store word1 and word2 in a map, now iterate 1st map and check if all char is matched with mp2 then push all mp1 and mp2
 char in vectors then sort the vector and check v1 == v2.
@@ -4517,7 +4470,7 @@ Apply Operation 2: "baaccc" -> "abbccc"
 */
 
 
-//23. EQUAL ROW AND COLUMN PAIRS                                             {T.C = O(N^2), S.C = O(N)}
+//97. EQUAL ROW AND COLUMN PAIRS                                             {T.C = O(N^2), S.C = O(N)}
 /*
 First convert row vector element into a string then , mp<string, count> , now initialize count = 0 check particular col with matching row
 then increase count.
@@ -4570,7 +4523,7 @@ Explanation: There are 3 equal row and column pairs:
 
 
 /*---------------------------------------------------------- STACK ----------------------------------------------*/
-//24. REMOVING STARS FROM A STRING                                     {T.C = O(N), S.C = O(N)}
+//98. REMOVING STARS FROM A STRING                                     {T.C = O(N), S.C = O(N)}
 /*
 Take a stack and push the element != * otherwise pop (!stk.empty) after that pop element from stack and push to string after that reverse the
 string(stack is LIFO) then finally return ans string.
@@ -4613,7 +4566,7 @@ Explanation: The entire string is removed, so we return an empty string.
 */
 
 
-//25. ASTEROID COLLISION                                           {T.C = O(N), S.C = O(N)}
+//99. ASTEROID COLLISION                                           {T.C = O(N), S.C = O(N)}
 /*
 Check the condition (collision case) if stack not empty, it < 0 and st.top > 0 find sum of each iteration, check if 
 sum > 0{Stack's asteroid is big, reinitialse it = 0 }, sum < 0 {incoming asteroid is big(destroys other) pop up the elemnt}
@@ -4670,7 +4623,7 @@ Explanation: The 2 and -5 collide resulting in -5. The 10 and -5 collide resulti
 */
 
 
-//26. DECODE STRINGS                                                 {T.C = O(N), S.C = O(N)}
+//100. DECODE STRINGS                                                 {T.C = O(N), S.C = O(N)}
 /*
 Use two stacks(string, int), 2 var(string, int) iterate string , handle cases opening bracket= push curr string and 
 curr number in respective stacks, closing brackets = pops the previous string and number from their respective stacks
@@ -4726,7 +4679,7 @@ Output: "abcabccdcdcdef"
 
 
 /*--------------------------------------------------- QUEUE ----------------------------------------------------*/
-//27. NUMBER OF RECENT CALLS                                             {T.C = O(N), S.C = O(1)}
+//101. NUMBER OF RECENT CALLS                                             {T.C = O(N), S.C = O(1)}
 /*
 Take an queue, first find the margin(t-3000) push the element(t) in queue, pop the element from queue until top element lesser then margin
 after that return size of queue.
@@ -4734,9 +4687,8 @@ after that return size of queue.
 class RecentCounter {
 public:
     queue<int>q;
-    RecentCounter() {
-        
-    }
+    RecentCounter() {}
+
     int ping(int t) {
         int margin = t - 3000;
         q.push(t);
@@ -4764,7 +4716,7 @@ recentCounter.ping(3002);  // requests = [1, 100, 3001, 3002], range is [2,3002]
 */
 
 
-//28. DOTA2 SENAT
+//102. DOTA2 SENAT
 //BRUTE FORCE                                                         {T.C = O(N^2), S.C = O(1)}
 /*
 First store count of R and D, initialize idx = 0, if (R) remove nearest D vice versa,
@@ -4881,7 +4833,7 @@ struct ListNode {
     ListNode(int x) : val(x), next(nullptr) {}
     ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
-//29. DELETE THE MIDDLE NODE OF A LINKED LIST                                  {T.C = O(N), S.C = O(1)}
+//103. DELETE THE MIDDLE NODE OF A LINKED LIST                                  {T.C = O(N), S.C = O(1)}
 /*
 Using slow and fast pointer approach first find the middle element then remove middle element(temp->next = slow->next {slow (middle element skipped)})
 after that delete slow and return head;
@@ -4932,7 +4884,7 @@ Node 0 with value 2 is the only node remaining after removing node 1.
 */
 
 
-//30. ODD EVEN LINKED LIST                                                  {T.C = O(N), S.C = O(1)}
+//104. ODD EVEN LINKED LIST                                                  {T.C = O(N), S.C = O(1)}
 /*
 Using two pointers one from head and another from head->next now traverse ll while(even && even->next) increase both pointers after that
 connect odd->next = evenhead (connect odd and even ll).
@@ -4972,11 +4924,8 @@ Output: [2,3,6,7,1,5,4]
 */
 
 
-//31. REVERSE LINKED LIST                               (CUTTED)
-
-
-//32. MAXIMUM TWIN SUM OF A LINKED LIST                                           {T.C = O(N), S.C = O(N)}
-//32a. APPROACH 1(By converting LL into vector)
+//105. MAXIMUM TWIN SUM OF A LINKED LIST                                           {T.C = O(N), S.C = O(N)}
+// APPROACH 1(By converting LL into vector)
 /*
 First Store all ll element into a vector then initialize 2 pointers i = 0 and j = n-1 , take twinSum = arr[i]+arr[j] and update max 
 after that retun max.
@@ -5024,7 +4973,7 @@ public:
     }
 };
 
-//32b. APPROACH 2 (USING STACK)                                                 {T.C = O(N), S.C = O(N)}
+// APPROACH 2 (USING STACK)                                                 {T.C = O(N), S.C = O(N)}
 /*
 Take Stack put ll element into stack, then traverse ll till n/2 and add st.top().
 */
@@ -5054,7 +5003,7 @@ public:
     }
 };
 
-//32c. APPROCH 3 (USING LL{reverse 2nd half(mid)})                              {T.C = O(N), S.C = O(1)}
+// APPROCH 3 (USING LL{reverse 2nd half(mid)})                              {T.C = O(N), S.C = O(1)}
 /*
 Finds the mid node, reverse after the mid node then take two pointers on start and mid and add
 the two pointers return max of it.
@@ -5131,10 +5080,7 @@ There is only one node with a twin in the linked list having twin sum of 1 + 100
 
 
 /*-------------------------------------------------------- BINARY TREE - DFS ------------------------------------------------------*/
-//33. MAXIMUM DEPTH OF BINARY TREE                       (CUTTED)
-
-
-//34. LEAF SIMILAR TREES                                                    {T.C = O(N), S.C = O(N)}
+//106. LEAF SIMILAR TREES                                                    {T.C = O(N), S.C = O(N)}
 /*
 Take 2 vectors for storing leaf nodes, then call inorder , search for leaf node and push in vector then make recursive call of left and right
 if v1 == v2 ? true : false.
@@ -5173,7 +5119,7 @@ Output: false
 */
 
 
-//35. COUNT GOOD NODES IN BINARY TREE                                {T.C = O(N), S.C = O(H)}
+//107. COUNT GOOD NODES IN BINARY TREE                                {T.C = O(N), S.C = O(H)}
 /*
 Take count variable, make dfs calls(root, root->val, count) , if(root->val > maxVal)  update maxValue and make left
 and right calls. after that return count.
@@ -5220,7 +5166,7 @@ Explanation: Root is considered as good.
 */
 
 
-//36. PATH SUM III                                          {T.C = O(N^2), S.C = O(1)}
+//108. PATH SUM III                                          {T.C = O(N^2), S.C = O(1)}
 /*
 First we have to find the paths from Node , then make recursive call for left and right subtree, for finding count of 
 paths we have another function in which if root->val == target sum then count path++ and make recursive call for 
@@ -5271,7 +5217,7 @@ Output: 3
 */
 
 
-//37. LONGEST ZIGZAG PATH IN A BINARY TREE                           {T.C = O(N), S.C = O(H)}
+//109. LONGEST ZIGZAG PATH IN A BINARY TREE                           {T.C = O(N), S.C = O(H)}
 /*
 we have to check both the left and rigth subtree for that make two fun call each, then in func update maxi = max(maxi, steps)
 if(left) check for 2 condition if left to right (steps+1) or left to left(steps == 1) simialar for right subtree.
@@ -5318,11 +5264,8 @@ Output: 0
 */
 
 
-//38. LOWEST COMMON ANCESTOR OF A BINARY TREE                 (CUTTED)
-
-
 /*--------------------------------------------------------------- BINARY TREE BFS -----------------------------------------------*/
-//39. BINARY TREE RIGHT SIDE VIEW                                          {T.C = O(N), S.C = O(N)}
+//110. BINARY TREE RIGHT SIDE VIEW                                          {T.C = O(N), S.C = O(N)}
 /*
 Take vector and call solve function in which NRL(Right view) {NLR(Left View)} if(level == ans.size(){size reached change level}), push root->val
 in vector and level++.
@@ -5348,6 +5291,39 @@ public:
         return ans;
     }
 };
+
+//another way using BFS (level order traversal)
+class Solution {
+public:
+    void lvlOrder(TreeNode* root, vector<vector<int>>&ans){
+        //base case
+        if(!root) return;
+
+        queue<TreeNode*>q;
+        q.push(root);
+        while(!q.empty()){
+            int sz = q.size();
+            vector<int>temp;
+            while(sz--){
+                auto frontNode = q.front();
+                q.pop();
+                temp.push_back(frontNode->val);
+                if(frontNode->left) q.push(frontNode->left);
+                if(frontNode->right)q.push(frontNode->right);
+            }
+            ans.push_back(temp);
+        }
+    }
+    vector<int> rightSideView(TreeNode* root) {
+        vector<vector<int>>ans;
+        lvlOrder(root, ans);
+        vector<int>res;
+        for(auto it : ans){
+            res.push_back(it.back());
+        }
+        return res;
+    }
+};
 /*
 Example 1:
 Input: root = [1,2,3,null,5,null,4]
@@ -5363,7 +5339,7 @@ Output: []
 */
 
 
-//40. MAXIMUM LEVEL SUM OF A BINARY TREE                              {T.C = O(N), S.C = O(N)}
+//110. MAXIMUM LEVEL SUM OF A BINARY TREE                              {T.C = O(N), S.C = O(N)}
 /*
 Take resultLvl, currLvl, maxiSum and queue(bfs) push root in queue, then bfs(while(!q.empty())) traverse in queue
 and update sum also check for left and right subtree after that currLvl++ and update result lvl.
@@ -5420,7 +5396,7 @@ Output: 2
 
 
 /*-----------------------------------------------------------BINARY SEARCH TREE(BST) -----------------------------------------------*/
-//41. SEARCH IN A BINARY SEARCH TREE                                      {T.C = O(N), S.C = O(H)}
+//111. SEARCH IN A BINARY SEARCH TREE                                      {T.C = O(N), S.C = O(H)}
 /*
 Simply check base case if root not exist return null if (root->val == val) return root(return corresponding tree).
 if(root->val > val) recursion right else left.
@@ -5453,7 +5429,7 @@ Output : []
 */
 
 
-//42. DELETE NODE IN A BST                                            {T.C = O(N), S.C = O(H)}
+//112. DELETE NODE IN A BST                                            {T.C = O(N), S.C = O(H)}
 /*
 Before deleting the node we have to chech number or child does deleting node have, if zero child simply delete and return 
 NULL, if 1 child (left or right) return non deleted (root->left) or root->right, if 2 child then we have to check minimum
@@ -5542,7 +5518,7 @@ Output: []
 2. PRIM'S ALGO             {intermediate result always connected} 
 */
 
-//BFS OF GRAPH                                                      {T.C = O(N+M/ V+E), S.C = O(N+M / V+E)}   //N = nodes, E = edges
+//113. BFS OF GRAPH                                                      {T.C = O(N+M/ V+E), S.C = O(N+M / V+E)}   //N = nodes, E = edges
 /*
 We required 3 DS (ans, vis(bool), queue) and also initialize nodeindex = 0, push node in queue and mark vis[node] = 1 and push node in ans
 now traverse queue, take out frontNode and push in ans, after that traverse adj[frontNode] , if (!vis[it]) then push it and mark vis[it]=1.
@@ -5599,7 +5575,7 @@ thus bfs will be 0 1 2.
 */
 
 
-//DFS OF GRAPH                                                        {T.C = O(N+M / V+E), S.C = O(N+M / V+E)}
+//114. DFS OF GRAPH                                                        {T.C = O(N+M / V+E), S.C = O(N+M / V+E)}
 /*
 We required 2 DS (ans, vis(bool)) and also initialize nodeindex = 0,  mark vis[node] = 1 and push node in ans,  now traverse adj[node],
 if (!vis[it]) then push it and mark vis[it]=1 and make recursive call to DFS.
@@ -5658,7 +5634,7 @@ thus dfs will be 0 1 2 3.
 
 
 /*----------------------------------------------------- GRAPHS DFS ------------------------------------------------*/
-//43. KEYS AND ROOMS                                             {T.C = O(N+M), S.C = O(N+M)}
+//115. KEYS AND ROOMS                                             {T.C = O(N+M), S.C = O(N+M)}
 /*
 Simple dfs , take bool vector and call dfs if after dfs any room is left or(vis == false) then return false else true.
 */
@@ -5702,7 +5678,7 @@ Explanation: We can not enter room number 2 since the only key that unlocks it i
 */
 
 
-//44. NUMBER OF PROVINCES                                       {T.C = O(N^2), S.C = O(N+M)}
+//116. NUMBER OF PROVINCES                                       {T.C = O(N^2), S.C = O(N+M)}
 /*
 Actually We are finding the components(islands) in this , we use simple dfs and take for loop for handling disconnected
 components and in dfs Call we checks for index(for(int i = 0 ; i < n ; i++)) not for value(auto it : isConnected[node])
@@ -5742,7 +5718,7 @@ Output: 3
 */
 
 
-//45. REORDER ROUTES TO MAKE ALL PATHS LEAD TO THE CITY ZERO              {T.C = O(N+M), S.C = O(N+M)}
+//117. REORDER ROUTES TO MAKE ALL PATHS LEAD TO THE CITY ZERO              {T.C = O(N+M), S.C = O(N+M)}
 /*
 Initialize a count variable = 0, make and adj list, with pair<value, 1or0(real path or imaginary path)> and vised array
 then make dfs call in dfs call simple dfs mark vis[node] = 1 then iterate over adjcency list and if not vis[node / v] ,
@@ -5796,7 +5772,7 @@ Output: 0
 */
 
 
-//46. EVALUATE DIVISION                                       {T.C = O(N+M), S.C = O(N+M)}
+//118. EVALUATE DIVISION                                       {T.C = O(N+M), S.C = O(N+M)}
 /*
 similar question to graph with with weight or graph traversal
 */
@@ -5873,7 +5849,7 @@ Output: [0.50000,2.00000,-1.00000,-1.00000]
 
 
 /*------------------------------------------------------- GRAPH BFS ----------------------------------------------------------*/
-//47. NEAREST EXIT FROM ENTRANCE IN MAZE                                   {T.C = O(N*M), S.C = O(N)}
+//119. NEAREST EXIT FROM ENTRANCE IN MAZE                                   {T.C = O(N*M), S.C = O(N)}
 /*
 We use simple BFS approach, take queue initialize with entrance position , take count of minSteps =0, mark grid visited (grid[en[0]][en[1]] = '+')
 while !q.empty() take sz of queue in that while (que sze--) simply extract top element and check the condition if exit find return minSteps else
@@ -5956,7 +5932,7 @@ Explanation: There are no exits in this maze.
 */
 
 
-//48. ROTTING ORANGES                                                         {T.C = O(N*M), S.C = O(N)}
+//120. ROTTING ORANGES                                                         {T.C = O(N*M), S.C = O(N)}
 /*
 Take queue{{row, col}, time} traverse in a grid if its 2 (rotten) push in queue with 0 time and mark vis = 2, else vis = 0(not rotten) , if element
 is 1 then cntFreshOranges++, intitialze variable time and count = 0, apply bfs and check for neighbours , finally return time.
@@ -6037,7 +6013,7 @@ Explanation: Since there are already no fresh oranges at minute 0, the answer is
 
 
 /*----------------------------------------------------- HEAP / PRIORITY QUEUE -----------------------------------------*/
-//49. KTH LARGEST ELEMENT IN AN ARRAY                                      {T.C = O(N*LOGK), S.C = O(K)}
+//121. KTH LARGEST ELEMENT IN AN ARRAY                                      {T.C = O(N*LOGK), S.C = O(K)}
 /*
 Using min Heap put first k elements in heap, then for rest of element check if curr element is bigger than minHeap.top()
 then pop top element and push curr element to minheap, finally return minHeap.top( k th largest element).
@@ -6074,7 +6050,7 @@ Output: 4
 */
 
 
-//50. SMALLEST NUMBER IN INIFINITE SET                                   {T.C = O(N), S.C = O(N)}
+//122. SMALLEST NUMBER IN INIFINITE SET                                   {T.C = O(N), S.C = O(N)}
 class SmallestInfiniteSet {
 public:
     priority_queue<int, vector<int>, greater<int>>minHeap;
@@ -6128,7 +6104,7 @@ smallestInfiniteSet.popSmallest(); // return 5, and remove it from the set.
 */
 
 
-//51. MAXIMUM SUBSEQUENCE SCORE                                 {T.C = O(N*LOGN), S.C = O(N)}
+//123. MAXIMUM SUBSEQUENCE SCORE                                 {T.C = O(N*LOGN), S.C = O(N)}
 /*
 First store the vectors in single vector<pair> then sort in decreasing order on the basis of second vector, then make
 minHeap and variable kSum(store first k elment sum). take maxi (final ans variable) = kSum * v[k-1].second(mini element)
@@ -6188,7 +6164,7 @@ Choosing index 2 is optimal: nums1[2] * nums2[2] = 3 * 10 = 30 is the maximum po
 */
 
 
-//52. TOTAL COST TO HIRE K WORKERS                                 {T.C = O(K*LOGN), S.C = O(N)}
+//124. TOTAL COST TO HIRE K WORKERS                                 {T.C = O(K*LOGN), S.C = O(N)}
 /*
 Using 2 minHeap first for 1st k costs another for last k costs , while count < k , push costs in minHeap < candidates 
 and if both pq is not empty then compare there top element and push the lowest cost in ans , finally return ans.
@@ -6258,7 +6234,7 @@ The total hiring cost is 4.
 int guess(int a);
 //--------------------
 
-//53. GUESS NUMBER HIGHER OR LOWER                                  {T.C = O(LOGN), S.C = O(1)}
+//125. GUESS NUMBER HIGHER OR LOWER                                  {T.C = O(LOGN), S.C = O(1)}
 /*
 First there is Pre defined guess function with output(0, 1, -1) , use binary search and find the location of guess number
 and update accordingly finally return pick.
@@ -6298,7 +6274,7 @@ Output: 1
 */
 
 
-//54. SUCCESSFUL PAIRS OF SPELLS AND POTIONS
+//126. SUCCESSFUL PAIRS OF SPELLS AND POTIONS
 //BRUTE FORCE                                                 {T.C = O(N*M), S.C = O(1)} 
 /*
 Use 2 loops first loop traverse on spells another on potions in which store products of both vector and if the product 
@@ -6374,7 +6350,7 @@ Thus, [2,0,2] is returned.
 */
 
 
-//55. FIND PEAK ELEMENT                                              {T.C = O(LOGN), S.C = O(1)}
+//127. FIND PEAK ELEMENT                                              {T.C = O(LOGN), S.C = O(1)}
 //BRUTE FORCE                                                  
 class Solution {
 public:
@@ -6416,7 +6392,7 @@ Output: 5
 Explanation: Your function can return either index number 1 where the peak element is 2, or index number 5 where the peak element is 6.
 */
 
-//56. KOKO EATING BANANAS                                        {T.C = O(LOGN), S.C = O(1)}
+//128. KOKO EATING BANANAS                                        {T.C = O(LOGN), S.C = O(1)}
 /*
 Iniitialize two pointer one is one start(piles) another on max element of piles vector , now apply binary search
 if(hour >= counthours of getHours(piles, mid)) ans = mid, end = mid-1 else start = mid+1, and return ans, In get hour func
@@ -6472,7 +6448,7 @@ Output: 23
 STEP  1. DO SOMETHING OR EXPLORE 
 STEP  2. EXPLORE
 STEP  3. REVERT STEP-1 AND FURTHER EXPLORE*/
-//57. LETTER COMBINATIONS OF A PHONE NUMBER                             {T.C = O(EXP), S.C = O(N)}
+//129. LETTER COMBINATIONS OF A PHONE NUMBER                             {T.C = O(EXP), S.C = O(N)}
 /*
 Use brute force recursive solution and apply backtracking to it. first store all the strings of keypad in a map, then
 in solve function if index >= digits.length() . ans.push_back(output) , extract number (digits[index]-'0') now traverse value
@@ -6527,7 +6503,7 @@ Output: ["a","b","c"]
 */
 
 
-//58. COMBINATION SUM III                                       {T.C = O(EXP), S.C = O(N^2)}
+//130. COMBINATION SUM III                                       {T.C = O(EXP), S.C = O(N^2)}
 /*
 Take combo(combination) vector and ans(vector of vector) and make solve call(recursion) with 1 = idx and 0 = sum , in solve
 if(k == 0 && sum == n) ans.push_back combo, take a for loop from currindex to 9 and push curr i and make recursive call
@@ -6583,7 +6559,7 @@ Using 4 different numbers in the range [1,9], the smallest sum we can get is 1+2
 
 
 /*---------------------------------------- DYNAMIC PROGRAMMING (DP) --------------------------------------------------*/
-//59. NTH TRIBONACCI NUMBER                                         {T.C = O(N), S.C = O(N)}
+//131. NTH TRIBONACCI NUMBER                                         {T.C = O(N), S.C = O(N)}
 /*
 Bottom up(initial index = n) approach in TOP DOWN (DP) first check for base cases , then follow standardise dp steps
 and store(dp[i] = solve(i-3)+solve(i-2)+solve(i-1)).
@@ -6630,7 +6606,7 @@ Output: 1389537
 */
 
 
-//60. MIN COST CLIMBING STAIRS                                       {T.C = O(N), S.C = O(N)}
+//132. MIN COST CLIMBING STAIRS                                       {T.C = O(N), S.C = O(N)}
 /*
 Use dp and take min(n-1 and n-2) , in solveMem handle base case if(n == 0) return cost[0] similarly for 1 , store ans in
 dp = cost[i] + min(solveMem(n-1), solveMem(n-2))
@@ -6686,10 +6662,7 @@ The total cost is 6.
 */
 
 
-//61. HOUSE ROBBER                          (CUTTED)
-
-
-//62. DOMINO AND TROMINO TILING                                           {T.C = O(N), S.C = O(N)}
+//133. DOMINO AND TROMINO TILING                                           {T.C = O(N), S.C = O(N)}
 /*
 We have to use formula ans = 2*(n-1) + (n-3) and store ans n dp , finally return it.
 */
@@ -6734,15 +6707,7 @@ Output: 1
 
 
 /*----------------------------------------------- DP MULTIDIMENSIONAL ------------------------------------------------*/
-//63. UNIQUE PATHS                          (CUTTED)
-
-//64. LONGEST COMMON SUBSEQUENCE            (CUTTED)
-
-
-//65. BEST TIME TO BUY STOCK  (CUTTED)
-
-
-//66. EDIT DISTANCE                                                      {T.C = O(N*M), S.C = O(N*M)}
+//134. EDIT DISTANCE                                                      {T.C = O(N*M), S.C = O(N*M)}
 /*
 First check base cases then if word1[i] == word[j] then move both pointers else perform insert(i, j+1{add}),
 delete(i+1{skip}, j), replace operations(i+1, j+1).
@@ -6813,9 +6778,7 @@ exection -> execution (insert 'u')
 
 
 /*--------------------------------------------------- BIT MANIPULATION -----------------------------------------------*/
-//67. COUNT BITS                    (CUTTED)
-
-//68. SINGLE NUMBER (ALL TWICE EXCEPT ONE(ANS))                                                {T.C = O(N), S.C = O(1)}
+//135. SINGLE NUMBER (ALL TWICE EXCEPT ONE(ANS))                                                {T.C = O(N), S.C = O(1)}
 // (1 element appear once and other twice, find 1 elements which appears once)                                                {T.C = O(N), S.C = O(1)}
 /*
 xor of each element (1^1 = 0 and 1^0 = 1) so if the element is same of pairwise then it will cancel or and remaining element is ans.
@@ -6841,7 +6804,7 @@ Output: 4
 */
 
 
-//129a. SINGLE NUMBER II   (1 element appear once and other thrice , find 1 elements which appears once)
+//136. SINGLE NUMBER II   (1 element appear once and other thrice , find 1 elements which appears once)
 /*
 brute force = use unordered map store all values in map and return whose count is 1.   {T.C = O(N*LOGN), S.C = O(N)}
 */
@@ -6890,7 +6853,7 @@ Output: 99
 */
 
 
-//129b. SINGLE NUMBER III  (2 elements appears once and other twice, find 2 elements which appears once)
+//137. SINGLE NUMBER III  (2 elements appears once and other twice, find 2 elements which appears once)
 //{T.C = O(N), S.C = O(1)}
 /*
 */
@@ -6936,8 +6899,7 @@ Output: [-1,0]
 */
 
 
-
-//69. MINIMUM FLIPS TO MAKE (A) OR (B) EQUAL TO (C)
+//138. MINIMUM FLIPS TO MAKE (A) OR (B) EQUAL TO (C)
 //BRUTE FORCE APPROACH(INTUTIVE)                                            {T.C = O(N), S.C = O(1)}
 /*
 Check the bits one by one whether they need to be flipped. basically we have to check for all the numbers untill all will 0
@@ -6995,7 +6957,7 @@ Output: 0
 
 
 /*--------------------------------------------------- TRIE ------------------------------------------------------------*/
-//70.  IMPLEMENT TRIE (PREFIX TREE)                    {T.C = O(N + N), S.C = O(N*M {no. of word , lenghth of word})}
+//139.  IMPLEMENT TRIE (PREFIX TREE)                    {T.C = O(N + N), S.C = O(N*M {no. of word , lenghth of word})}
 /*
 //trie's main functions = insert, search, delete
 //first we have to create a struct (isEndOfWord, child array)
@@ -7094,7 +7056,7 @@ trie.search("app");     // return True
 */
 
 
-//71. SEARCH SUGGESTIONS SYSTEMS
+//140. SEARCH SUGGESTIONS SYSTEMS
 //USING SORTING AND BINARY SEARCH                                           {T.C = O(N*LOGN), S.C = O(N)}
 /*
 First sort the products, then iterate to searchword string prefix += it, find the index of lower_bound and store in start, push empty vector in ans
@@ -7138,9 +7100,7 @@ Explanation: The only word "havana" will be always suggested while typing the se
 
 
 /*------------------------------------------------- INTERVALS ---------------------------------------------------------*/
-//72. NON-OVERLAPPING INTERVALS                        (CUTTED)
-
-//73. MINIMUM NUMBER OF ARROWS TO BURST BALLOONS                                  {T.C = O(N*LOGN), S.C = O(1)}
+//141. MINIMUM NUMBER OF ARROWS TO BURST BALLOONS                                  {T.C = O(N*LOGN), S.C = O(1)}
 bool comp(vector<int>&a, vector<int>&b){
     return a[1] < b[1];                         
 }
@@ -7176,7 +7136,7 @@ Explanation: The balloons can be burst by 2 arrows:
 
 
 /*---------------------------------------- MONOTONIC STACK(INCREASING STACK) -------------------------------------------*/
-//74. DAILY TEMPRATURES                                          {T.C = O(N*LOGN), S.C = O(N)}
+//142. DAILY TEMPRATURES                                          {T.C = O(N*LOGN), S.C = O(N)}
 /*
 Take an stack, traverse the vector(tempratures) , while(st.empty() && element > element[stk.top{index}]) , prevIdx = st.top()
 put ans[prevIdx] = i-prevIdx, then push i in stack finally return ans.
@@ -7214,7 +7174,7 @@ Output: [1,1,0]
 */
 
 
-//75. ONLINE STOCK SPAN                                        {T.C = O(N), S.C = O(N)}
+//143. ONLINE STOCK SPAN                                        {T.C = O(N), S.C = O(N)}
 /*
 Take an stack(pair{price, span}) initialize span 1 (always) then traverse stack untill the !st.empty() && top <= price
 span += top.second(curr span) , push {price , span } in stack and finally return span.
@@ -7258,27 +7218,9 @@ stockSpanner.next(85);  // return 6
 
 /*------------------------------------------------== THE END ---------------------------------------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //150 TOP INTERVIEW QUESTIONS (LEETCODE)
-#include<bits/stdc++.h>
-using namespace std;
 
-
-//01. MERGE SORTED ARRAY                                                           {T.C = O(N), S.C = O(1)}
+//144. MERGE SORTED ARRAY                                                           {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
     void merge(vector<int>& nums1, int m, vector<int>& nums2, int n) {
@@ -7310,7 +7252,7 @@ The result of the merge is [1].
 */
 
 
-//02. REMOVE ELEMENT                                                           {T.C = O(N), S.C = O(1)}
+//145. REMOVE ELEMENT                                                           {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
@@ -7333,7 +7275,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 */
 
 
-//03. REMOVE DUPLICATES FROM SORTED ARRAY                                            {T.C = O(N), S.C = O(1)}
+//146. REMOVE DUPLICATES FROM SORTED ARRAY                                            {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
@@ -7359,7 +7301,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 */
 
 
-//04. REMOVE DUPLICATES FROM SORTED ARRAY II                                {T.C = O(N), S.C = O(1)}
+//147. REMOVE DUPLICATES FROM SORTED ARRAY II                                {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
     int removeDuplicates(vector<int>& nums) {
@@ -7386,7 +7328,7 @@ It does not matter what you leave beyond the returned k (hence they are undersco
 */
 
 
-//05. MAJORITY ELEMENT
+//148. MAJORITY ELEMENT
 //BRUTE FORCE (HASHMAP)                                                      {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
@@ -7433,7 +7375,7 @@ Output: 2
 */
 
 
-//06. ROTATE ARRAY
+//149. ROTATE ARRAY
 //BRUTE FORCE                                                                  {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
@@ -7474,16 +7416,7 @@ rotate 3 steps to the right: [5,6,7,1,2,3,4]
 */
 
 
-//07. BEST TIME TO BUY AND SELL STOCK        (CUTTED)
-
-//08. BEST TIME TO BUY AND SELL STOCK II      (CUTTED)
-
-//09. JUMP GAME                               (CUTTED)
-
-
-//10. JUMP GAME II                            (CUTTED)
-
-//11. H-INDEX                                                                  {T.C = O(N*LOGN), S.C = O(1)}
+//150. H-INDEX                                                                  {T.C = O(N*LOGN), S.C = O(1)}
 //BRUTE FORCE(WORKING SOLUTION)
 class Solution {
 public:
@@ -7533,7 +7466,7 @@ Since the researcher has 3 papers with at least 3 citations each and the remaini
 */
 
 
-//12. INSERT DELETE GETRANDOM O(1)
+//151. INSERT DELETE GETRANDOM O(1)
 class RandomizedSet {
     vector<int>v;                              //to store index
     unordered_map<int, int>mp;                      //<value, index>
@@ -7589,9 +7522,7 @@ randomizedSet.getRandom(); // Since 2 is the only number in the set, getRandom()
 */
 
 
-//13. PRODUCT OF ARRAY EXCEPT ITSELF              (CUTTED)
-
-//14. GAS STATION                                                               {T.C = O(N), S.C = O(1)}
+//152. GAS STATION                                                               {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
     int canCompleteCircuit(vector<int>& gas, vector<int>& cost) {
@@ -7622,7 +7553,7 @@ Therefore, return 3 as the starting index.
 */
 
 
-//15. CANDY                                                                    {T.C = O(N), S.C = O(N)}
+//153. CANDY                                                                    {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     int candy(vector<int>& ratings) {
@@ -7658,7 +7589,7 @@ The third child gets 1 candy because it satisfies the above two conditions.
 */
 
 
-//16. TRAPPING RAIN WATER                                                        {T.C = O(N), S.C =  O(1)}
+//154. TRAPPING RAIN WATER                                                        {T.C = O(N), S.C =  O(1)}
 class Solution {
 public:
     int trap(vector<int>& height) {
@@ -7693,10 +7624,7 @@ In this case, 6 units of rain water (blue section) are being trapped.
 */
 
 
-//21. REVERSE WORDS IN A STRING                         (CUTTED)
-
-
-//22. ZIGZAG CONVERSION                                                        {T.C = O(N), S.C = O(N)}
+//155. ZIGZAG CONVERSION                                                        {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     string convert(string s, int numRows) {
@@ -7738,7 +7666,7 @@ P     I
 */
 
 
-//23. FIND THE INDEX OF THE FIRST OCCURANCE IN A STRING
+//156. FIND THE INDEX OF THE FIRST OCCURANCE IN A STRING
 //BRUTE FORCE (STL)
 class Solution {
 public:
@@ -7771,7 +7699,7 @@ Explanation: "leeto" did not occur in "leetcode", so we return -1.
 */
 
 
-//24. TEXT JUSTIFICATION                                                          {T.C = O(N), S.C = O(N)}
+//157. TEXT JUSTIFICATION                                                          {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     vector<string> fullJustify(vector<string>& words, int maxWidth) {
@@ -7829,7 +7757,7 @@ Note that the second line is also left-justified because it contains only one wo
 */
 
 
-//25. VALID PALINDROME 
+//158. VALID PALINDROME 
 //BRUTE FORCE APPROACH                                                                     {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
@@ -7888,18 +7816,7 @@ Explanation: "amanaplanacanalpanama" is a palindrome.
 */
 
 
-//26. IS SUBSEQUENCE                                    (CUTTED)
-
-
-//27 (CUTTED - TWO SUM)
-
-
-//28. CONTAINER WITH MOST WATER                       (CUTTED)
-
-//29. 3 SUM                                            (CUTTED)
-
-
-//30.a SLIDING WINDOW MAXIMUM
+//159 SLIDING WINDOW MAXIMUM
 //BRUTE FORCE  (TLE)                                                                     {T.C = O(N^2), S.C = O(N)}
 class Solution {
 public:
@@ -7964,14 +7881,14 @@ Window position                Max
  */
 
 
-//30. MINIMUM SIZE SUBARRAY SUM                                                   {T.C = O(N), S.C = O(1)}
+//160. MINIMUM SIZE SUBARRAY SUM                                                   {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
     int minSubArrayLen(int target, vector<int>& nums) {
         int n = nums.size();
         int i = 0, j = 0;
         int sum = 0;
-        int mini = INT_MAX;                          //lenght of window
+        int mini = INT_MAX;                          //length of window
         while(j < n){
             sum += nums[j];                          //calculation
             while(sum >= target){
@@ -7991,10 +7908,7 @@ Explanation: The subarray [4,3] has the minimal length under the problem constra
 */
 
 
-//31.  LONGEST SUBSTRING WITHOUT REPEATING CHARACTERS                (CUTTED)
-
-
-//32. SUBSTRING WITH CONCATENATION OF ALL WORDS                                      {T.C = O(N*M), S.C = O(N)}
+//161. SUBSTRING WITH CONCATENATION OF ALL WORDS                                      {T.C = O(N*M), S.C = O(N)}
 //COPY PASTE
 class Solution {
 public:
@@ -8052,9 +7966,7 @@ The output order does not matter. Returning [9,0] is fine too.
 */
 
 
-//33. MINIMUM WINDOW SUBSTRING                        (CUTTED)
-
-//34. VALID SUDOKU                                                               {T.C = O(1), S.C = O(1)}
+//162. VALID SUDOKU                                                               {T.C = O(1), S.C = O(1)}
 class Solution {
 public:
     bool isValidSudoku(vector<vector<char>>& board) {
@@ -8094,14 +8006,7 @@ Output: true
 */
 
 
-//35. SPIRAL MATRIX                                 (CUTTED)
-
-
-//36. ROTATE IMAGE (90 DEGREE)                       (CUTTED)
-
-//37. SET MATRIX ZEROES
-
-//38. GAME OF LIFE                                                          {T.C = O(N*M), S.C = O(1)}
+//163. GAME OF LIFE                                                          {T.C = O(N*M), S.C = O(1)}
 //APPROACH
 //store all cordinates in array then check 4 cases according to quesiton
 class Solution {
@@ -8163,7 +8068,7 @@ Output: [
 */
 
 
-//39. RANSOME NOTE
+//164. RANSOME NOTE
 //APPROACH 1
 //USING UNORDERED MAP / HASH MAP                                       {T.C = O(N), S.C = O(N)}
 class Solution {
@@ -8212,7 +8117,7 @@ Output: true
 */
 
 
-//40. ISOMORPHIC STRINGS                                                         {T.C = O(N), S.C = O(N)}
+//165. ISOMORPHIC STRINGS                                                         {T.C = O(N), S.C = O(N)}
 //APPROACH
 //first fill map (check already present char & replace char) then check correct mapping
 class Solution {
@@ -8249,7 +8154,7 @@ Output: true
 */
 
 
-//41. WORD PATTERN                                                                 {T.C = O(N+M), S.C = O(N+M)}
+//166. WORD PATTERN                                                                 {T.C = O(N+M), S.C = O(N+M)}
 //APPROACH
 //first divide long string into string array then map each char to string then check for valid mapping 
 class Solution {
@@ -8298,14 +8203,7 @@ Output: true
 */
 
 
-//42. VALID ANAGRAM                           (CUTTED)
-
-
-//43. GROUP ANAGRAMS                          (CUTTED)
-
-//44. TWO SUM                                 (CUTTED)
-
-//45. HAPPY NUMBER                                                               {T.C = O(LOGN), S.C = O(LOGN)}
+//167. HAPPY NUMBER                                                               {T.C = O(LOGN), S.C = O(LOGN)}
 //APPROACH
 //run infinite loop store sum in set (unique elements only) if duplicate entry return false else find sum = 1 then true
 class Solution {
@@ -8342,7 +8240,7 @@ Explanation:
 */
 
 
-//46. CONTAINS NUMBER II
+//168. CONTAINS NUMBER II
 //BRUTE FORCE                                                                    {T.C = O(N^2), S.C = O(1)}
 //use 2 for loop and match condition(nums[i] == nums[j] and abs(i - j) <= k) according to question
 class Solution {
@@ -8385,10 +8283,7 @@ Output: true
 */
 
 
-//47. LONGEST CONSECUTIVE SEQUENCE                             (CUTTED)
-
-
-//48. SUMMARY RANGES                                                       {T.C = O(N), S.C = O(N)}
+//169. SUMMARY RANGES                                                       {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     vector<string> summaryRanges(vector<int>& nums) {
@@ -8428,41 +8323,7 @@ Explanation: The ranges are:
 */
 
 
-//49. MERGE INTERVALS                                  (CUTTED)                                            
-
-
-
-//50. INSERT INTERVALS                                 (CUTTED)
-
-
-//51. MINIMUM NUMBER OF ARROWS TO BURST BALLOONS                         (CUTTED)
-
-//52. VAILID PARENTHESIS                                                                    {T.C = O(N), S.C = O(N)}
-class Solution {
-public:
-    bool isValid(string s) {
-        stack<int>st;
-        for(auto ch : s){
-            if(ch == '(' || ch == '{' || ch == '['){
-                st.push(ch);
-            }
-            //check also is st is not empty otherwise run time error
-            else if( !st.empty() && ( (ch == ')' && st.top() == '(' ) || (ch == '}' && st.top() == '{') || (ch == ']' && st.top() == '[') ) ){
-                st.pop();
-            }else{
-                return false;
-            }
-        }
-        return st.empty();
-    }
-};
-/*
-Input: s = "()[]{}"
-Output: true
-*/
-
-
-//53. SIMPLIFY PATH                                                              {T.C = O(N), S.C = O(N)}
+//170. SIMPLIFY PATH                                                              {T.C = O(N), S.C = O(N)}
 //APPROACH
 //take a stack and res string traverse string check for following condition
 /*
@@ -8525,7 +8386,7 @@ Explanation: In the canonical path, multiple consecutive slashes are replaced by
 */
 
 
-//54. MIN STACK                                                                             {T.C = O(1), S.C = O(N)}
+//171. MIN STACK                                                                             {T.C = O(1), S.C = O(N)}
 //APPROACH
 /*
 Initialize two stacks, arr to store the actual elements and min_arr to store the minimum elements.
@@ -8545,9 +8406,7 @@ To get the minimum value of the stack, return the top element from the min_arr s
 class MinStack {
 public:
     stack<int>s, b;                      //s = stores original elements, b = stores minimum elements
-    MinStack() {
-        
-    }
+    MinStack() {}
     
     void push(int val) {
         s.push(val);
@@ -8590,7 +8449,7 @@ minStack.getMin(); // return -2
 */
 
 
-//55. EVALUATE REVERSE POLISH NOTATION                                                 {T.C = O(N), S.C = O(N)}
+//172. EVALUATE REVERSE POLISH NOTATION                                                 {T.C = O(N), S.C = O(N)}
 //APPROACH
 //simple implement postfix operation 
 class Solution {
@@ -8637,7 +8496,7 @@ Explanation: ((10 * (6 / ((9 + 3) * -11))) + 17) + 5
 */
 
 
-//56. BASIC CALCULATOR                                                              {T.C = O(N), S.C = O(N)}
+//173. BASIC CALCULATOR                                                              {T.C = O(N), S.C = O(N)}
 //APPROACH
 //take 2 stacks (1 = integer, 2 = sign), now calculate ans
 class Solution {
@@ -8685,11 +8544,8 @@ Output: 23
 */
 
 
-//57. LINKED LIST CYCLE                                  (CUTTED)
-
-
 //ALWAYS USE DUMMY NODE WHERE WE HAVE TO DISLINK OR DELETE THE NODE
-//58. ADD 2 NUMBERS                                                                    {T.C = O(N), S.C = O(MAX(N,M)}
+//174. ADD 2 NUMBERS                                                                    {T.C = O(N), S.C = O(MAX(N,M)}
 class Solution {
 public:
     /* already reverse order have given in question
@@ -8741,9 +8597,6 @@ Explanation: 342 + 465 = 807.
 */
 
 
-//59. MERGE 2 SORTED LISTS                           (CUTTED)
-
-
 // Definition for a Node.
 class Node {
 public:
@@ -8757,7 +8610,7 @@ public:
         random = NULL;
     }
 };
-//60. COPY LIST WITH RANDOM POINTERS                                                 {T.C = O(N), S.C = O(N)}
+//175. COPY LIST WITH RANDOM POINTERS                                                 {T.C = O(N), S.C = O(N)}
 //APPROACH
 //first copy the original ll to new ll then stores its value and random pontier in unordered map then with the help
 //of map we put random pointer to new ll
@@ -8805,9 +8658,7 @@ Output: [[7,null],[13,0],[11,4],[10,2],[1,0]]
 */
 
 
-//61a. REVERSE LINKED LIST                          (CUTTED)
-
-//61b. REVERSE A LINKED LIST II                                                                  {T.C = O(N), S.C = O(1)}
+//176. REVERSE A LINKED LIST II                                                                  {T.C = O(N), S.C = O(1)}
 //APPROACH
 //divide in 3 subproblem first traverse till left then reverse left to right at last join remaining from right to last in ll
 class Solution {
@@ -8852,7 +8703,7 @@ Output: [1,4,3,2,5]
 */
 
 
-//62. REVERSE NODES IN K-GROUP                                                       {T.C = O(N), S.C = O(1)}
+//177. REVERSE NODES IN K-GROUP                                                       {T.C = O(N), S.C = O(1)}
 //APPROACH
 //simple recursive solution first reverse k nodes then put recursion
 class Solution {
@@ -8899,9 +8750,7 @@ Output: [2,1,4,3,5]
 */
 
 
-//63. REMOVE NTH NODE FROM END OF LIST                             (CUTTED)
-
-//64. REMOVE DUPLICATES FROM SORTED LINKED LIST II                                     {T.C = O(N), S.C = O(1)}
+//178. REMOVE DUPLICATES FROM SORTED LINKED LIST II                                     {T.C = O(N), S.C = O(1)}
 //APPROACH
 //make a dummy node (for dislinking the link) then untill a val is same remove pointers after that simple return dummy->next
 class Solution {
@@ -8931,7 +8780,7 @@ Output: [1,2,5]
 */
 
 
-//65. ROTATE LIST                                                                  {T.C = O(N), S.C = O(1)}
+//179. ROTATE LIST                                                                  {T.C = O(N), S.C = O(1)}
 //APPROACH
 //first find len of list then effective rotation (k % n) from start(k = n-k) traversal find new head and update it
 class Solution {
@@ -8970,7 +8819,7 @@ Output: [4,5,1,2,3]
 */
 
 
-//66. PARTITION LIST                                                           {T.C = O(N), S.C = O(1)}
+//180. PARTITION LIST                                                           {T.C = O(N), S.C = O(1)}
 //APPROACH
 //take 2 dummy nodes or list 1st list have have store smaller element then x 2nd list rest of element then return ll
 class Solution {
@@ -9008,7 +8857,7 @@ Output: [1,2]
 */
 
 
-//67. LRU CACHE                                                            {T.C = O(1), S.C = O(CAP)}
+//181. LRU CACHE                                                            {T.C = O(1), S.C = O(CAP)}
 //APPROACH
 //The LRUCache class uses a doubly linked list and a hash map to implement a fixed-size cache, allowing for efficient O(1)
 //retrieval and insertion of key-value pairs while maintaining the least recently used (LRU) item at the tail of the list. 
@@ -9108,16 +8957,8 @@ lRUCache.get(3);    // return 3
 lRUCache.get(4);    // return 4
 */
 
-//68. MAXIMUM DEPTH OF BINARY TREE                      (CUTTED)
 
-
-//69. SAME TREE                                         (CUTTED)
-
-
-//70. INVERT BINARY TREES                               (CUTTED)
-
-
-//71. SYMMETRIC TREE                                                     {T.C =  O(N), S.C = O(H)}
+//182. SYMMETRIC TREE                                                     {T.C =  O(N), S.C = O(H)}
 //APPROACH
 //check if null then true then check val is same then isMiror function by recursion checks symmetric or not
 //similar to 69 quesition
@@ -9149,12 +8990,6 @@ Input: root = [1,2,2,null,3,null,3]
 Output: false*/
 
 
-//72. CONSTRUCT BINARY TREE FROM PREORDER AND INORDER TRAVERSAL          (CUTTED)
-
-
-
-//73. CONSTRUCT BINARY TREE FROM POSTORDER AND INORDER TRAVERSAL         (CUTTED)
-
 class Node {
 public:
     int val;
@@ -9169,7 +9004,7 @@ public:
     Node(int _val, Node* _left, Node* _right, Node* _next)
         : val(_val), left(_left), right(_right), next(_next) {}
 };
-//74. POPULATING NEXT RIGHT POINTERS IN EACH NODE II                        {T.C = O(N), S.C = O(N)}
+//183. POPULATING NEXT RIGHT POINTERS IN EACH NODE II                        {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     Node* connect(Node* root) {
@@ -9214,7 +9049,7 @@ Output: []
 */
 
 
-//75. FLATTEN BINARY TREE TO LINKED LIST                              {T.C = O(N), S.C = O(1)}
+//184. FLATTEN BINARY TREE TO LINKED LIST                              {T.C = O(N), S.C = O(1)}
 //APPROACH
 //using moris traversal (S.C = o(1))
 class Solution {
@@ -9266,7 +9101,7 @@ is 1 2 3 4 5 6.
 */
 
 
-//76. PATH SUM                                                    {T.C = O(N), S.C = O(H)}
+//185. PATH SUM                                                    {T.C = O(N), S.C = O(H)}
 //APPROACH 
 //simple recursion 
 class Solution {
@@ -9314,7 +9149,7 @@ There is no root-to-leaf path with sum = 5.
 */
 
 
-//77. SUM ROOT TO LEAF NUMBERS                                                   {T.C = O(N), S.C = O(H)}
+//186. SUM ROOT TO LEAF NUMBERS                                                   {T.C = O(N), S.C = O(H)}
 //APPROACH
 //first take sum of leaf node then traverse left and right subtree after that n/10 for backtracking
 class Solution {
@@ -9362,10 +9197,7 @@ Therefore, sum = 495 + 491 + 40 = 1026.
 */
 
 
-//78. BINARY TREE MAXIMUM PATH SUM                        (CUTTED)
-
-
-//79. BINARY SEARCH TREE ITERATOR                                                  {T.C = O(1), S.C = O(H)}
+//187. BINARY SEARCH TREE ITERATOR                                                  {T.C = O(1), S.C = O(H)}
 class BSTIterator {
     stack<TreeNode*>st;
 public:
@@ -9419,7 +9251,7 @@ bSTIterator.hasNext(); // return False
 */
 
 
-//80. COUNT COMPLETE TREE NODES                                                    {T.C = O(N), S.C = O(1)}
+//188. COUNT COMPLETE TREE NODES                                                    {T.C = O(N), S.C = O(1)}
 class Solution {
 public:
     int countNodes(TreeNode* root) {
@@ -9444,56 +9276,7 @@ Output: 0
 */
 
 
-//81. LOWEST COMMON ANCESTOR OF A BST                      (CUTTED)
-
-
-//82. BINARY TREE RIGHT SIDE VIEW                          (CUTTED)
-
-
-//83. AVERAGE OF LEVELS IN BINARY TREE                                    {T.C = O(N), S.C = O(N)}
-//APPROACH
-//using dfs(level order traversal) traverse the each node level wise , store node->val in ans vector then find average
-//by using row or sum / no. of row or sum 
-class Solution {
-public:
-    vector<double> averageOfLevels(TreeNode* root) {
-        vector<double>ans;
-        queue<TreeNode*>q;
-        q.push(root);
-        while(!q.empty()){
-            double n = q.size(), row = 0;
-            for(int i = 0 ; i < n ; i++){
-                TreeNode* temp = q.front();
-                q.pop();
-                row += temp->val;
-                if(temp->left){
-                    q.push(temp->left);
-                }
-                if(temp->right){
-                    q.push(temp->right);
-                }
-            }
-            ans.push_back(row/n);
-        }
-        return ans;
-    }
-};
-/*
-Example 1:
-Input: root = [3,9,20,null,null,15,7]
-Output: [3.00000,14.50000,11.00000]
-Explanation: The average value of nodes on level 0 is 3, on level 1 is 14.5, and on level 2 is 11.
-Hence return [3, 14.5, 11].
-
-Example 2:
-Input: root = [3,9,20,15,7]
-Output: [3.00000,14.50000,11.00000]*/
-
-
-//84a. BINARY TREE LEVEL ORDER TRAVERSAL                 (CUTTED)
-
-
-//85. BINARY TREE ZIGZAG LEVEL ORDER TRAVERSAL                                      {T.C = O(N), S.C = O(N)}
+//189. BINARY TREE ZIGZAG LEVEL ORDER TRAVERSAL                                      {T.C = O(N), S.C = O(N)}
 //APPROACH
 //using level order traversal just take an bool parameter when traverse 1 level reverse then reverse traversal row wise
 class Solution {
@@ -9545,7 +9328,7 @@ Output: [[1]]
 */
 
 
-//86. MINIMUM ABSOLUTE DIFFERENCE IN BST                                            {T.C = O(N), S.C = O(H)}
+//190. MINIMUM ABSOLUTE DIFFERENCE IN BST                                            {T.C = O(N), S.C = O(H)}
 //APPROACH
 //Store preVal first then find minDiff by subtracting each preVal to current value.
 class Solution {
@@ -9583,15 +9366,7 @@ Output: 1
 */
 
 
-//87. KTH SMALLEST ELEMENT IN A BST                        (CUTTED)
-
-
-//88. VALIDATE BINARY SEARCH TREE                             (CUTTED)
-
-
-//89. NUMBER OF ISLANDS                               (CUTTED)
-
-//90. SURROUNDED REGIONS                                                   {T.C = O(N*M), S.C = O(1)}
+//191. SURROUNDED REGIONS                                                   {T.C = O(N*M), S.C = O(1)}
 //APPROACH
 //reverse solution of number of islands in which we find the group rether then we solve the boudary cases and with attach
 //boundary 'O' convert to '#' and another '0' with 'X'.
@@ -9674,15 +9449,7 @@ Output: [["X"]]
 */
 
 
-
-//91. CLONE A GRAPH                              (CUTTED)
-
-
-//92. EVALUATE DIVISION                                (CUTTED)
-
-//93. COURSE SCHEDULE                                  (CUTTED)
-
-//94. COURSE SCHEDULE II
+//192. COURSE SCHEDULE II
 /*
 detect the cycle in a graph by using dfs if cycle present return empty vector else true or traverse graph and not getting any cycle
 then store in vector and return it
@@ -9739,7 +9506,7 @@ So one correct course order is [0,1,2,3]. Another correct ordering is [0,2,1,3].
 */
 
 
-//95. SNAKES AND LADDERS
+//193. SNAKES AND LADDERS
 /*
 finding minimum steps for this we have to perfrom bfs 
 */
@@ -9815,7 +9582,7 @@ Output: 1
 */
 
 
-//96. MIIMUM GENETIC MUTATION
+//194. MIIMUM GENETIC MUTATION
 /*
 create a set for storing unique strings and queue for bfs if with the each iteration the final node or string same as pervious return count of steps 
 else return -1 
@@ -9865,7 +9632,7 @@ Output: 2
 */
 
 
-//97. WORD LADDER
+//195. WORD LADDER
 /*
 similar to above
 */
@@ -9913,10 +9680,7 @@ Explanation: The endWord "cog" is not in wordList, therefore there is no valid t
 */
 
 
-//98.  IMPLEMENT TRIE (PREFIX TREE)                                      (CUTTED)    
-
-
-//99. DESIGN ADD AND SEARCH WORDS DATA STRUCTURE                                       {T.C = O(N + N), S.C = O(N*M {no. of word , lenghth of word})}
+//196. DESIGN ADD AND SEARCH WORDS DATA STRUCTURE                                       {T.C = O(N + N), S.C = O(N*M {no. of word , lenghth of word})}
 /*
 same approach as above but slightly differnce because in this '.' dot char may be include so that we have to handle seperatly
 */
@@ -10004,9 +9768,7 @@ wordDictionary.search("b.."); // return True
 */
 
 
-//100a. WORD SEARCH                               (CUTTED)
-
-//100b. WORD SEARCH II                                                               {T.C = O(N*M*4^L), S.C = O(N*M)}
+//197. WORD SEARCH II                                                               {T.C = O(N*M*4^L), S.C = O(N*M)}
 /*
 we cant use simple dfs like above it will increase the time compelxity so that's why we use trie so that we can traverse only once
 */
@@ -10111,11 +9873,7 @@ Output: []
 */
 
 
-
-//101. LETTER COMBINATIONS OF A PHONE NUMBER                    (CUTTED)
-
-
-//102. COMBINATIONS                                                                {T.C = O(nCk), S.C = O(K)}
+//198. COMBINATIONS                                                                {T.C = O(nCk), S.C = O(K)}
 /*
 store temp vector then push in ans vector after we explore each each value of k with take and non take 
 */
@@ -10157,7 +9915,7 @@ Explanation: There is 1 choose 1 = 1 total combination.
 */
 
 
-//103. PERMUTATIONS                                                                 {T.C = O(N*N!), S.C = O(N)}
+//199. PERMUTATIONS                                                                 {T.C = O(N*N!), S.C = O(N)}
 /*
 we requried a for loop to traverse from 0 index and used vector to keep track the number is used or not
 */
@@ -10233,9 +9991,7 @@ Output: [[1]]
 */
 
 
-//104. COMBINATION SUM                      (CUTTED)
-
-//105a. N-QUEENS                                                                      {T.C = O(N! OR EXP), S.C = O(N^2)}
+//200. N-QUEENS                                                                      {T.C = O(N! OR EXP), S.C = O(N^2)}
 /*
 first we check each col internally check row if both not attacked then move to another col and move further 
 conditions must be followed :
@@ -10331,7 +10087,7 @@ Output: [["Q"]]
 */
 
 
-//105b. N-QUEENS II                                                             {T.C = O(N! OR EXP), S.C = O(N^2)}
+//201. N-QUEENS II                                                             {T.C = O(N! OR EXP), S.C = O(N^2)}
 /*
 same as above just right size of ans vector
 */
@@ -10401,7 +10157,7 @@ Output: 1
 */
 
 
-//106. GENERATE PARANTEHSIS
+//202. GENERATE PARANTEHSIS
 /*
 take a temp empty string and push the "(" if opening bracket is smaller then number and push ")" 
 if closing bracket is smaller then opening bracket 
@@ -10440,11 +10196,7 @@ Output: ["()"]
 */
 
 
-//same as 100a
-//107. WORD SEARCH                                  (CUTTED)
-
-
-//108. CONVERT SORTED ARRAY TO BINARY SEARCH TREE                                    {T.C = O(N), S.C = O(N)}               
+//203. CONVERT SORTED ARRAY TO BINARY SEARCH TREE                                    {T.C = O(N), S.C = O(N)}               
 /*
 first finds the mid element and make it root node then create a left and right subtree (vector) then make recursive call
 root's left = leftsubtree , root's right = rightsubtree and finally retiurn root
@@ -10486,7 +10238,7 @@ Explanation: [1,null,3] and [3,1] are both height-balanced BSTs.
 */
 
 
-//109. SORT LIST
+//204. SORT LIST
 /*
 //BRUTE FORCE APPROACH                                                      {T.C = O(N*LOGN), S.C = O(N)}
 first convert list to vector then sort the vector and again convert vector to list
@@ -10630,7 +10382,7 @@ public:
         bottomRight = _bottomRight;
     }
 };
-//110. CONSTRUCT QUAD TREE                                                   {T.C = O(N^2*LOGN), S.C = O(LOGN)}
+//205. CONSTRUCT QUAD TREE                                                   {T.C = O(N^2*LOGN), S.C = O(LOGN)}
 /*
 first check if the node is leaf node then directly return node if not then we have to make 4 recursive call for each quadrant.
 */
@@ -10691,7 +10443,7 @@ The topRight have different values so we divide it into 4 sub-grids where each h
 */
 
 
-//111. MERGE K SORTED LINKED LIST                                               {T.C = O(N*LOGN), S.C = O(1)}
+//206. MERGE K SORTED LINKED LIST                                               {T.C = O(N*LOGN), S.C = O(1)}
 /*
 put first element of each list in minheap it will always pop out minimum element and we have to store this into vector or ll
 */
@@ -10748,9 +10500,7 @@ Example 3:
 */
 
 
-//112. MAXIMUM SUBARRAY (KADANE'S ALGORITHM)             (CUTTED)
-
-//113. MAXIMUM SUM CIRCULAR SUBARRAY
+//207. MAXIMUM SUM CIRCULAR SUBARRAY
 /*
 finding 2 types of sum 
 1. maxi = maximum continuous subarray sum (kadane's algo simple)
@@ -10805,7 +10555,7 @@ Explanation: Subarray [-2] has maximum sum -2.
 */
 
 
-//114. SEARCH INSERT POSITION                                          {T.C = O(LOGN), S.C = O(1)}
+//208. SEARCH INSERT POSITION                                          {T.C = O(LOGN), S.C = O(1)}
 /*
 simple binary search if element is in vector other wise handle boundry case and after that return low or start value
 because at the breaking point start will show the exact position of insert.
@@ -10850,7 +10600,7 @@ Output: 4
 */
 
 
-//115. SEARCH A 2D MATRIX                                              {T.C = O(LOG(M*N)), S.C = O(1)}
+//209. SEARCH A 2D MATRIX                                              {T.C = O(LOG(M*N)), S.C = O(1)}
 /*
 finding element in matrix by converting 2D to 1D representation by row index = mid/col and col index = mid%col then apply
 simple binary search.
@@ -10899,12 +10649,7 @@ Output: false
 */
 
 
-//116. FIND PEAK ELEMENT                         (CUTTED)
-
-
-//117. SEARCH IN ROTATED SORTED ARRAY            (CUTTED)
-
-//118. FIND FIRST AND LAST POSITION OF ELEMENT IN SORTED ARRAY                       {T.C = O(LOGN), S.C = O(1)}
+//210. FIND FIRST AND LAST POSITION OF ELEMENT IN SORTED ARRAY                       {T.C = O(LOGN), S.C = O(1)}
 /*
 using 2 binary searches separately and find first and last occurance index
 */
@@ -10970,10 +10715,7 @@ Output: [-1,-1]
 */
 
 
-//119. FIND MINIMUM IN ROTATED SORTED ARRAY                        (CUTTED)
-
-
-//120. MEDIAN OF TWO SORTED ARRAYS                                               {T.C = O(LOGN), S.C = O(1)}
+//211. MEDIAN OF TWO SORTED ARRAYS                                               {T.C = O(LOGN), S.C = O(1)}
 /*
 divide the two arrays in 6 parts cut1, cut2, left1, left2, right1, right2 accrodingly and use binary search
 */
@@ -11028,10 +10770,7 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 */
 
 
-//121. KTH LARGEST ELEMENT IN AN ARRAY                   (CUTTED)
-
-
-//122. IPO                                                                  {T.C = O(N*LOGN), S.C = O(N)}
+//212. IPO                                                                  {T.C = O(N*LOGN), S.C = O(N)}
 /*
 store profits and capitals in pair in vector then sort this vector according to there capital then create a maxHeap
 and push element in heap if the current capital is less then w (total capital) after that add current element to w 
@@ -11080,7 +10819,7 @@ Output: 6
 */
 
 
-//123. FIND K PAIRS WITH SMALLEST SUMS                                                 {T.C = O(N*M*LOGK), S.C = O(N*M)}
+//213. FIND K PAIRS WITH SMALLEST SUMS                                                 {T.C = O(N*M*LOGK), S.C = O(N*M)}
 /*
 brute force approach - make maxheap of {sum, {i, j}} first put first k pairs then match the sum with top element sum and update pq accordingly
 after that break(sorted so right side is always greater) pull element of maxheap and put in ans vector
@@ -11134,10 +10873,7 @@ Explanation: The first 2 pairs are returned from the sequence: [1,1],[1,1],[1,2]
 */
 
 
-//124. FIND MEDIAN FROM DATA STREAM                        (CUTTED)
-
-
-//125. ADD BINARY                                                               {T.C = O(N), S.C = O(N)}
+//214. ADD BINARY                                                               {T.C = O(N), S.C = O(N)}
 /*
 we traverse from the end of both digit by converting string first and extract carry from that and add to next element
 */
@@ -11176,16 +10912,7 @@ Output: "10101"
 */
 
 
-//126. REVERSE BITS                           (CUTTED)
-
-//127. NUMBER OF 1 BITS                       (CUTTED)
-
-//128. SINGLE NUMBER                           (CUTTED)
-
-//129. SINGLE NUMBER II                        (CUTTED)
-
-
-//130. BITWISE AND OF NUMBERS RANGE                                              {T.C = O(N), S.C = O(1)}
+//215. BITWISE AND OF NUMBERS RANGE                                              {T.C = O(N), S.C = O(1)}
 /*
 I step:we iterate this loop till both number becomes equal;
 II step:when both number become equal put c number of zeroes through left shift to find & of numbers;
@@ -11218,7 +10945,7 @@ Output: 0
 */
 
 
-//131. PALINDROME NUMBER                                                    {T.C = O(N), S.C = O(N)}
+//216. PALINDROME NUMBER                                                    {T.C = O(N), S.C = O(N)}
 /*
 Brute Force = convert int to string then use 2 pointers (start , end) and match starting and ending element if it is same (true) else false
 */
@@ -11251,7 +10978,7 @@ Explanation: From left to right, it reads -121. From right to left, it becomes 1
 */
 
 
-//132. PLUS ONE                                                         {T.C = O(N), S.C = O(1)}
+//217. PLUS ONE                                                         {T.C = O(N), S.C = O(1)}
 /*
 Traverse from backward if digit != 9 then simply increase the digit and return it , other wise set digit[i] == 0 and finally insert 1 
 at beggining when all digit is 99..
@@ -11290,7 +11017,7 @@ Thus, the result should be [4,3,2,2].
 */
 
 
-//133. FACTORIAL TRAILING ZEROES                                               {T.C = O(LOG(5)N), S.C = O(1)}
+//218. FACTORIAL TRAILING ZEROES                                               {T.C = O(LOG(5)N), S.C = O(1)}
 /*
 zeroes are made only with (2*5) we have to keep count of both but actually 2 count is always greater
 then 5 so we have to take only min count(5) by keep dividing and adding count to ans
@@ -11321,7 +11048,7 @@ Explanation: 5! = 120, one trailing zero.
 */
 
 
-//134. SQRT(X)                                                                   {T.C = O(LOGN), S.C = O(1)}
+//219. SQRT(X)                                                                   {T.C = O(LOGN), S.C = O(1)}
 /*
 using binary search sqare = mid*mid if square == n return mid else use binary search (square < n) start = mid+1 else end = mid-1
 */
@@ -11362,7 +11089,7 @@ Explanation: The square root of 8 is 2.82842..., and since we round it down to t
 */
 
 
-//135. POW(X, N)                                                          {T.C = O(LOGN), S.C = O(1)}
+//220. POW(X, N)                                                          {T.C = O(LOGN), S.C = O(1)}
 /*
 basically we have different cases to handle 1. if n == 0 return 1, 2. if n is negative then make recursive call of reciprocal and pass
 negative n, 3. if n is even divide in 2 parts and pass n/2 , 4. odd then x* even condition 
@@ -11403,7 +11130,7 @@ Explanation: 2-2 = 1/22 = 1/4 = 0.25
 */
 
 
-//136. MAX POINTS ON A LINE                             
+//221. MAX POINTS ON A LINE                             
 /*
 {T.C = O(N^3), S.C = O(1)}
 Brute force = using simple math first find slope of first two point and then check with another point if slope is equal then increase count
@@ -11484,16 +11211,7 @@ Output: 4
 */
 
 
-//137. CLIMBING STAIRS                    (CUTTED)
-
-
-//138. HOUSE ROBBER                          (CUTTED)
-
-//139. WORD BREAK                             (CUTTED)
-
-//140a. COIN CHANGE                          (CUTTED)
-
-//140b. COIN CHANGE II                                                      {T.C = O(N), S.C = O(N*N)}
+//222. COIN CHANGE II                                                      {T.C = O(N), S.C = O(N*N)}
 /*
 use recursion + memoization , use 2D dp changing(index, amount) 
 */
@@ -11544,9 +11262,7 @@ Explanation: the amount of 3 cannot be made up just with coins of 2.
 */
 
 
-//141. LONGEST INCREASING SUBSEQUENCE              (CUTTED)
-
-//142. TRIANGLE                                                         {T.C = O(N*M), S.C = O(N*M)}
+//223. TRIANGLE                                                         {T.C = O(N*M), S.C = O(N*M)}
 /*
 create 2D dp , intialize row , col and col = vector[row].size() in recursive call we have only 2 option (i or i+1 col) store ans in dp
 with current element + min(i, i+1 col) ans.
@@ -11600,7 +11316,7 @@ Output: -10
 */
 
 
-//143. MINIMUM PATH SUM                                                        {T.C = O(N*M), S.C = O(N*M)}
+//224. MINIMUM PATH SUM                                                        {T.C = O(N*M), S.C = O(N*M)}
 /*
 create 2D dp , intialize row , col and col = vector[0].size() in recursive call we have only 2 option (down(row+1) or right(col+1)) store ans in dp
 with current element + min(down, right ) ans.
@@ -11651,7 +11367,7 @@ Output: 12
 */
 
 
-//144. UNIQUE PATHS II                                                     {T.C = O(N*M), S.C = O(N*M)}
+//225. UNIQUE PATHS II                                                     {T.C = O(N*M), S.C = O(N*M)}
 /*
 create 2D dp , intialize row , col and col = vector[0].size() in recursive call we have only 2 option (down(row+1) or right(col+1)) store ans and return
 it (shows total ways)
@@ -11708,10 +11424,7 @@ Output: 1
 */
 
 
-//145. LONGEST PALINDROMIC SUBSTRING                         (CUTTED)
-
-
-//146. INTERLEAVING STRING                                                {T.C = O(m*n*N), S.C = O(m*n*N)}
+//226. INTERLEAVING STRING                                                {T.C = O(m*n*N), S.C = O(m*n*N)}
 /*
 Using 3D dp match each char of s1 and s2 with s3 , if char match move the particular index of matching string and s3 string , base case
 if all index exhaust simultaneously then true, m+n != N gives false.
@@ -11819,12 +11532,7 @@ Explanation: Notice how it is impossible to interleave s2 with any other string 
 */
 
 
-//147. EDIT DISTANCE                                         
-
-
-//148, 149. BUY AND SELL STOCKS PROBLEMS (ALL TYPES)         (CUTTED)
-
-//150. MAXIMAL SQUARE                                                {T.C = O(N*M), S.C = O(N*M)}
+//227. MAXIMAL SQUARE                                                {T.C = O(N*M), S.C = O(N*M)}
 /*
 traverse the matrix and move right, down, diag find min ways for finding square then choose square which include max 1's
 */
@@ -11885,7 +11593,7 @@ Output: 1
 /*----------------------------------------------------------  THE END  ---------------------------------------------------------------------*/
 
 
-//PRIME NUMBER OF SET BITS IN A BINARY REPRESENTATION                   {T.C = O(N^2), S.C = O(1)}
+//228. PRIME NUMBER OF SET BITS IN A BINARY REPRESENTATION                   {T.C = O(N^2), S.C = O(1)}
 class Solution {
 public:
     bool isPrime(int n){
@@ -11932,7 +11640,7 @@ Explanation:
 */
 
 
-//DEGREE OF AN ARRAY                                              {T.C = O(N), S.C = O(N)}
+//229. DEGREE OF AN ARRAY                                              {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     int findShortestSubArray(vector<int>& nums) {
@@ -11974,7 +11682,7 @@ So [2,2,3,1,4,2] is the shortest subarray, therefore returning 6.
 */
 
 
-//DESIGN HASH SET                                     {T.C = O(1), S.C = O(1)}
+//230. DESIGN HASH SET                                     {T.C = O(1), S.C = O(1)}
 class MyHashSet {
 public:
     vector<bool>vec;
@@ -12003,7 +11711,7 @@ public:
  */
 
 
-//DESIGN HASH MAP                                     {T.C = O(1), S.C = O(1)}
+//231. DESIGN HASH MAP                                     {T.C = O(1), S.C = O(1)}
 class MyHashMap {
 public:
     vector<int>vec;
@@ -12033,7 +11741,7 @@ public:
  */
 
 
-//VALID PALINDROME                                       {T.C = O(N), S.C = O(N)}
+//232. VALID PALINDROME                                       {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     bool isValidPalindrome(string &s){
@@ -12074,7 +11782,7 @@ Since an empty string reads the same forward and backward, it is a palindrome.
 */
 
 
-//VALID PALINDROME II                                       {T.C = O(N), S.C = O(N)}
+//233. VALID PALINDROME II                                       {T.C = O(N), S.C = O(N)}
 class Solution {
 public:
     bool isPalindrome(string &s, int i, int j){
